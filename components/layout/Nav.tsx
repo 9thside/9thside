@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence, type Variants } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { EASE_EXPO, EASE_IN, DURATION } from '@/lib/motion'
-import { LogoMark } from '@/components/ui/Logo'
+import { LogoImage } from '@/components/ui/Logo'
 
 const navLinks = [
   { href: '/work', label: 'Work' },
@@ -81,11 +81,8 @@ export function Nav() {
       >
         <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-[68px] flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity duration-300 flex-shrink-0 group">
-            <LogoMark size={26} className="text-[var(--text-primary)] transition-colors duration-300" />
-            <span className="font-display italic text-[1.25rem] font-light text-[var(--text-primary)] tracking-tight leading-none">
-              9thside
-            </span>
+          <Link href="/" className="hover:opacity-80 transition-opacity duration-300 flex-shrink-0">
+            <LogoImage width={110} />
           </Link>
 
           {/* Desktop Nav */}
@@ -153,11 +150,8 @@ export function Nav() {
             exit="exit"
           >
             {/* Mobile menu logo */}
-            <div className="absolute top-5 left-6 flex items-center gap-2.5">
-              <LogoMark size={22} className="text-[var(--text-primary)]" />
-              <span className="font-display italic text-[1.1rem] font-light text-[var(--text-primary)] tracking-tight leading-none">
-                9thside
-              </span>
+            <div className="absolute top-5 left-6">
+              <LogoImage width={100} />
             </div>
 
             {/* Nav Links */}

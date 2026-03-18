@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Marquee } from '@/components/home/Marquee'
-import { LogoMark } from '@/components/ui/Logo'
+import { LogoImage } from '@/components/ui/Logo'
 import { EASE_EXPO, DURATION } from '@/lib/motion'
 
 const wordVariants = {
@@ -64,7 +64,7 @@ export function Hero() {
           transition={{ duration: DURATION.base, ease: EASE_EXPO, delay: 0.1 }}
           className="mb-8 md:mb-10"
         >
-          <LogoMark size={36} className="text-[var(--accent)]" />
+          <LogoImage width={140} />
         </motion.div>
 
         {/* Label */}
