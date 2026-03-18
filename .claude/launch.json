@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "9thSide",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", ".", "--listen", "4500"],
+      "port": 4500
+    }
+  ]
+}

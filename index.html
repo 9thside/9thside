@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">`
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9thSide — Photography, Videography, Design & Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────────────────────── -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">9thSide</a>
+
+      <ul class="nav__links">
+        <li class="nav__item has-dropdown">
+          <a href="#" class="nav__link">Services <span class="chevron">&#8964;</span></a>
+          <div class="dropdown">
+            <a href="#services" class="dropdown__item">Photography</a>
+            <a href="#services" class="dropdown__item">Videography</a>
+            <a href="#services" class="dropdown__item">Graphic Design</a>
+            <a href="#services" class="dropdown__item">Web Development</a>
+          </div>
+        </li>
+        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+        <li class="nav__item"><a href="#process" class="nav__link">Process</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        <a href="#contact" class="btn btn--primary">Start a Project</a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services" class="mobile-menu__link">Photography</a>
+      <a href="#services" class="mobile-menu__link">Videography</a>
+      <a href="#services" class="mobile-menu__link">Graphic Design</a>
+      <a href="#services" class="mobile-menu__link">Web Development</a>
+      <a href="#work" class="mobile-menu__link">Work</a>
+      <a href="#process" class="mobile-menu__link">Process</a>
+      <a href="#about" class="mobile-menu__link">About</a>
+      <a href="#contact" class="btn btn--primary mobile-menu__cta">Start a Project</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+
+    <!-- Background video — replace src with your own .mp4 file -->
+    <video
+      class="hero__video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster=""
+    >
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-photographer-taking-pictures-outdoors-1416-large.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__video-overlay"></div>
+
+    <!-- Main content -->
+    <div class="hero__content">
+      <span class="hero__label">Creative Studio</span>
+      <h1 class="hero__headline">
+        Your vision,<br />brought to life.
+      </h1>
+      <p class="hero__sub">We craft compelling visuals and digital experiences — from lens to launch.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--white btn--lg hero__cta-main">Start a Project</a>
+      </div>
+      <p class="hero__fine">Free consultation. No commitment required.</p>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+
+    <!-- ── PREVIEW STRIP (Squarespace-style) ────────────────── -->
+    <div class="hero__strip">
+      <div class="hero__strip-track" id="heroStripTrack">
+
+        <!-- Card 1 – Photography -->
+        <div class="strip-card">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Lumina</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--1"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div><div class="strip-card__p strip-card__p--sm"></div></div>
+          <div class="strip-card__label">Photography</div>
+        </div>
+
+        <!-- Card 2 – Videography -->
+        <div class="strip-card">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Meridian</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--2"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div><div class="strip-card__p strip-card__p--sm"></div></div>
+          <div class="strip-card__label">Videography</div>
+        </div>
+
+        <!-- Card 3 – Graphic Design -->
+        <div class="strip-card">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Aura</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--3"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div><div class="strip-card__p strip-card__p--sm"></div></div>
+          <div class="strip-card__label">Graphic Design</div>
+        </div>
+
+        <!-- Card 4 – Web Dev -->
+        <div class="strip-card">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Vela</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--4"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div><div class="strip-card__p strip-card__p--sm"></div></div>
+          <div class="strip-card__label">Web Development</div>
+        </div>
+
+        <!-- Card 5 – Brand -->
+        <div class="strip-card">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Nocturne</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--5"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div><div class="strip-card__p strip-card__p--sm"></div></div>
+          <div class="strip-card__label">Brand Film</div>
+        </div>
+
+        <!-- Card 6 – Portrait -->
+        <div class="strip-card">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Solstice</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--6"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div><div class="strip-card__p strip-card__p--sm"></div></div>
+          <div class="strip-card__label">Portrait Series</div>
+        </div>
+
+        <!-- Duplicate set for seamless loop -->
+        <div class="strip-card" aria-hidden="true">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Lumina</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--1"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div></div>
+          <div class="strip-card__label">Photography</div>
+        </div>
+        <div class="strip-card" aria-hidden="true">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Meridian</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--2"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div></div>
+          <div class="strip-card__label">Videography</div>
+        </div>
+        <div class="strip-card" aria-hidden="true">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Aura</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--3"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div></div>
+          <div class="strip-card__label">Graphic Design</div>
+        </div>
+        <div class="strip-card" aria-hidden="true">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Vela</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--4"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div></div>
+          <div class="strip-card__label">Web Development</div>
+        </div>
+        <div class="strip-card" aria-hidden="true">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Nocturne</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--5"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div></div>
+          <div class="strip-card__label">Brand Film</div>
+        </div>
+        <div class="strip-card" aria-hidden="true">
+          <div class="strip-card__bar"><span></span><span></span><span></span></div>
+          <div class="strip-card__nav"><div class="strip-card__logo">Solstice</div><div class="strip-card__navlinks"><i></i><i></i><i></i></div></div>
+          <div class="strip-card__hero strip-card__hero--6"></div>
+          <div class="strip-card__body"><div class="strip-card__h"></div><div class="strip-card__p"></div></div>
+          <div class="strip-card__label">Portrait Series</div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end preview strip -->
+
+  </section>
+
+  <!-- ── STATS ──────────────────────────────────────────────── -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item" data-count="150">
+          <span class="stats__number" data-target="150">0</span><span class="stats__suffix">+</span>
+          <p class="stats__label">Projects Delivered</p>
+        </div>
+        <div class="stats__item" data-count="80">
+          <span class="stats__number" data-target="80">0</span><span class="stats__suffix">+</span>
+          <p class="stats__label">Happy Clients</p>
+        </div>
+        <div class="stats__item" data-count="6">
+          <span class="stats__number" data-target="6">0</span><span class="stats__suffix">+</span>
+          <p class="stats__label">Years of Experience</p>
+        </div>
+        <div class="stats__item" data-count="4">
+          <span class="stats__number" data-target="4">0</span><span class="stats__suffix"></span>
+          <p class="stats__label">Creative Disciplines</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ───────────────────────────────────────────── -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Everything your brand needs<br />to stand out.</h2>
+        <p class="section-desc">From capturing moments to building digital worlds — 9thSide is your all-in-one creative partner.</p>
+      </div>
+
+      <div class="services__carousel-wrapper">
+        <div class="services__track" id="servicesTrack">
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3 class="service-card__title">Photography</h3>
+            <p class="service-card__desc">Brand photography, portraits, events, and product shoots that tell your story with striking clarity and emotion.</p>
+            <ul class="service-card__list">
+              <li>Brand & Commercial</li>
+              <li>Portrait & Lifestyle</li>
+              <li>Event Coverage</li>
+              <li>Product Photography</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">Get a Quote →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+            <h3 class="service-card__title">Videography</h3>
+            <p class="service-card__desc">Cinematic brand films, reels, event highlights, and promotional content that captivate audiences and drive results.</p>
+            <ul class="service-card__list">
+              <li>Brand Films & Commercials</li>
+              <li>Social Media Reels</li>
+              <li>Event Highlight Videos</li>
+              <li>Music Videos</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">Get a Quote →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 class="service-card__title">Graphic Design</h3>
+            <p class="service-card__desc">Logos, brand identities, marketing materials, and print/digital design that make your brand unforgettable.</p>
+            <ul class="service-card__list">
+              <li>Logo & Brand Identity</li>
+              <li>Social Media Graphics</li>
+              <li>Print & Packaging</li>
+              <li>Marketing Materials</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">Get a Quote →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__desc">Custom websites and web apps built for performance, accessibility, and conversion — designed to grow with you.</p>
+            <ul class="service-card__list">
+              <li>Custom Website Design</li>
+              <li>E-Commerce Stores</li>
+              <li>Portfolio & Landing Pages</li>
+              <li>Web App Development</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">Get a Quote →</a>
+          </div>
+
+        </div>
+
+        <div class="services__nav">
+          <button class="services__nav-btn" id="servicesPrev" aria-label="Previous">&#8592;</button>
+          <div class="services__dots" id="servicesDots">
+            <button class="services__dot active" data-index="0"></button>
+            <button class="services__dot" data-index="1"></button>
+            <button class="services__dot" data-index="2"></button>
+            <button class="services__dot" data-index="3"></button>
+          </div>
+          <button class="services__nav-btn" id="servicesNext" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WORK / PORTFOLIO ───────────────────────────────────── -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header section-header--dark">
+        <span class="section-label section-label--light">Our Work</span>
+        <h2 class="section-title section-title--light">Made with 9thSide.</h2>
+        <p class="section-desc section-desc--light">A glimpse of the stories we've told and the experiences we've crafted.</p>
+      </div>
+
+      <div class="work__filters">
+        <button class="work__filter active" data-filter="all">All</button>
+        <button class="work__filter" data-filter="photo">Photography</button>
+        <button class="work__filter" data-filter="video">Videography</button>
+        <button class="work__filter" data-filter="design">Graphic Design</button>
+        <button class="work__filter" data-filter="web">Web Dev</button>
+      </div>
+
+      <div class="work__grid" id="workGrid">
+
+        <div class="work__item work__item--large" data-category="photo">
+          <div class="work__img work__img--photo1"></div>
+          <div class="work__overlay">
+            <span class="work__tag">Photography</span>
+            <h3 class="work__title">Lumina Brand Shoot</h3>
+          </div>
+        </div>
+
+        <div class="work__item" data-category="design">
+          <div class="work__img work__img--design1"></div>
+          <div class="work__overlay">
+            <span class="work__tag">Graphic Design</span>
+            <h3 class="work__title">Aura Brand Identity</h3>
+          </div>
+        </div>
+
+        <div class="work__item" data-category="video">
+          <div class="work__img work__img--video1"></div>
+          <div class="work__overlay">
+            <span class="work__tag">Videography</span>
+            <h3 class="work__title">Meridian Brand Film</h3>
+          </div>
+        </div>
+
+        <div class="work__item" data-category="web">
+          <div class="work__img work__img--web1"></div>
+          <div class="work__overlay">
+            <span class="work__tag">Web Development</span>
+            <h3 class="work__title">Vela Online Store</h3>
+          </div>
+        </div>
+
+        <div class="work__item" data-category="photo">
+          <div class="work__img work__img--photo2"></div>
+          <div class="work__overlay">
+            <span class="work__tag">Photography</span>
+            <h3 class="work__title">Solstice Portrait Series</h3>
+          </div>
+        </div>
+
+        <div class="work__item work__item--large" data-category="video">
+          <div class="work__img work__img--video2"></div>
+          <div class="work__overlay">
+            <span class="work__tag">Videography</span>
+            <h3 class="work__title">Nocturne Event Highlight</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="work__cta">
+        <a href="#contact" class="btn btn--outline-light">See Full Portfolio →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROCESS ────────────────────────────────────────────── -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">From idea to impact<br />in four steps.</h2>
+      </div>
+
+      <div class="process__steps">
+
+        <div class="process__step">
+          <div class="process__step-number">01</div>
+          <div class="process__step-content">
+            <h3 class="process__step-title">Discovery Call</h3>
+            <p class="process__step-desc">We start with a conversation. Tell us about your brand, goals, and vision. We'll ask the right questions to understand exactly what you need.</p>
+          </div>
+          <div class="process__step-line"></div>
+        </div>
+
+        <div class="process__step">
+          <div class="process__step-number">02</div>
+          <div class="process__step-content">
+            <h3 class="process__step-title">Creative Strategy</h3>
+            <p class="process__step-desc">We develop a tailored creative brief, mood board, and project plan — aligning on direction, timelines, and deliverables before a single shutter clicks.</p>
+          </div>
+          <div class="process__step-line"></div>
+        </div>
+
+        <div class="process__step">
+          <div class="process__step-number">03</div>
+          <div class="process__step-content">
+            <h3 class="process__step-title">Production & Design</h3>
+            <p class="process__step-desc">Our team gets to work — shooting, editing, designing, and building with meticulous attention to every detail. You're kept in the loop throughout.</p>
+          </div>
+          <div class="process__step-line"></div>
+        </div>
+
+        <div class="process__step">
+          <div class="process__step-number">04</div>
+          <div class="process__step-content">
+            <h3 class="process__step-title">Delivery & Launch</h3>
+            <p class="process__step-desc">You receive polished, ready-to-use deliverables. We handle revisions, final exports, and — for web projects — a smooth, tested launch.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__visual">
+        <div class="about__img-stack">
+          <div class="about__img about__img--1"></div>
+          <div class="about__img about__img--2"></div>
+          <div class="about__badge">
+            <span class="about__badge-num">6+</span>
+            <span class="about__badge-text">Years Creating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__text">
+        <span class="section-label">About 9thSide</span>
+        <h2 class="section-title">We're a creative studio built on one belief: visuals change everything.</h2>
+        <p class="about__body">9thSide is an independent creative studio specializing in photography, videography, graphic design, and web development. We work with brands, entrepreneurs, and businesses who want to show up boldly — and mean it.</p>
+        <p class="about__body">Every project we take on gets our full creative energy. No templates. No shortcuts. Just thoughtful, intentional work that moves people.</p>
+        <div class="about__values">
+          <div class="about__value">
+            <span class="about__value-icon">&#10003;</span>
+            <span>Intentional creativity</span>
+          </div>
+          <div class="about__value">
+            <span class="about__value-icon">&#10003;</span>
+            <span>Transparent collaboration</span>
+          </div>
+          <div class="about__value">
+            <span class="about__value-icon">&#10003;</span>
+            <span>Delivered on time</span>
+          </div>
+          <div class="about__value">
+            <span class="about__value-icon">&#10003;</span>
+            <span>Results that last</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--lg">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ───────────────────────────────────────── -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Kind Words</span>
+        <h2 class="section-title">Clients who trusted 9thSide<br />to tell their story.</h2>
+      </div>
+
+      <div class="testimonials__track-wrapper">
+        <div class="testimonials__track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">"9thSide completely transformed our brand presence. The photography alone tripled our engagement on social media. They just *get* what your brand needs."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:#c8a97a;"></div>
+              <div>
+                <strong>Amara Jones</strong>
+                <span>Founder, Lumina Lifestyle Co.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">"From the discovery call to the final website launch, everything was seamless. The site they built for us looks incredible and converts like crazy."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:#7a9fc8;"></div>
+              <div>
+                <strong>Marcus Reid</strong>
+                <span>CEO, Vela Commerce</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">"The brand film they produced for us has been our best marketing asset ever. Clients reference it constantly. Absolute pros from start to finish."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:#a97ac8;"></div>
+              <div>
+                <strong>Priya Nair</strong>
+                <span>Creative Director, Meridian Studio</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">"Our logo and brand identity rebrand exceeded all expectations. Every piece of collateral we use now feels cohesive, polished, and powerful."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:#c8c87a;"></div>
+              <div>
+                <strong>David Osei</strong>
+                <span>Owner, Aura Apparel</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimonials__nav">
+          <button class="testimonials__btn" id="testimonialsPrev">&#8592;</button>
+          <button class="testimonials__btn" id="testimonialsNext">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ────────────────────────────────────────────────── -->
+  <section class="faq" id="faq">
+    <div class="container container--narrow">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Questions we get all the time.</h2>
+      </div>
+
+      <div class="faq__list">
+
+        <div class="faq__item">
+          <button class="faq__question">
+            How much does a project cost?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Every project is unique. Pricing depends on scope, deliverables, and timeline. We offer free discovery calls to discuss your needs and provide a custom quote. We work with a range of budgets — reach out and let's talk.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            How long does a typical project take?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Timelines vary by service. A brand photoshoot can be delivered in 1–2 weeks. A full website build typically takes 4–8 weeks. We always set clear timelines during the strategy phase and stick to them.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            Do you work with clients outside your local area?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Absolutely. Design and web projects are fully remote-friendly. For photography and videography, we're available to travel — travel costs are discussed upfront and included in your quote.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            Can 9thSide handle multiple services at once?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Yes — this is one of our biggest advantages. Because we cover photography, videography, design, and development under one roof, everything stays visually consistent. Bundling services often saves time and cost.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            What do you need from me to get started?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Just your ideas and goals. We guide you through the rest. A discovery call, a few reference points or inspiration, and a clear sense of your audience is all we need to get rolling.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            How many revisions are included?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>All projects include at least two rounds of revisions. We take the time upfront to align on creative direction so revisions are minimal — and our clients consistently find the first delivery exceeds expectations.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT / CTA BANNER ───────────────────────────────── -->
+  <section class="cta-banner" id="contact">
+    <div class="cta-banner__bg"></div>
+    <div class="container">
+      <div class="cta-banner__inner">
+        <span class="section-label section-label--light">Let's Create Together</span>
+        <h2 class="cta-banner__title">Ready to start your<br />next project?</h2>
+        <p class="cta-banner__sub">Tell us what you're working on and we'll get back to you within 24 hours.</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="contact-form__row">
+            <div class="contact-form__group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="contact-form__group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+          </div>
+          <div class="contact-form__group">
+            <label for="service">Service You're Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service…</option>
+              <option>Photography</option>
+              <option>Videography</option>
+              <option>Graphic Design</option>
+              <option>Web Development</option>
+              <option>Multiple Services</option>
+            </select>
+          </div>
+          <div class="contact-form__group">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" name="message" rows="5" placeholder="What are you working on? What's your timeline and budget?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--white btn--lg contact-form__submit">Send Message</button>
+        </form>
+
+        <div class="contact-form__success" id="formSuccess">
+          <div class="contact-form__success-icon">✓</div>
+          <h3>Message sent!</h3>
+          <p>We'll be in touch within 24 hours. Excited to hear more about your project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">9thSide</a>
+          <p class="footer__tagline">Photography · Videography · Design · Development</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Behance">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h7a3 3 0 0 1 0 6H3z"/><path d="M3 6h6"/><path d="M3 15h8a3.5 3.5 0 0 0 0-6H3"/><path d="M15 7h6M15 17h6M15 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__nav-groups">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Services</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#services">Photography</a></li>
+              <li><a href="#services">Videography</a></li>
+              <li><a href="#services">Graphic Design</a></li>
+              <li><a href="#services">Web Development</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Studio</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#work">Portfolio</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Contact</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#contact">Start a Project</a></li>
+              <li><a href="mailto:hello@9thside.com">hello@9thside.com</a></li>
+              <li><a href="#">Instagram DM</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__legal">© 2025 9thSide Creative Studio. All rights reserved.</p>
+        <div class="footer__legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
