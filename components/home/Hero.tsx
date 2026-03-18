@@ -11,7 +11,7 @@ const wordVariants = {
   visible: (i: number) => ({
     y: '0%',
     opacity: 1,
-    transition: { duration: 1.0, ease: EASE_EXPO, delay: 0.7 + i * 0.1 },
+    transition: { duration: 1.0, ease: EASE_EXPO, delay: 0.6 + i * 0.1 },
   }),
 }
 
@@ -20,63 +20,44 @@ export function Hero() {
   const words = headline.split(' ')
 
   return (
-    <section className="relative min-h-[100svh] flex flex-col overflow-hidden bg-bg">
+    <section className="relative min-h-[100svh] flex flex-col overflow-hidden">
 
-      {/* ── Ambient background layer ── */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Warm center glow */}
+      {/* ── Video background ── */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/media/hero.mp4" type="video/mp4" />
+        </video>
+
+        {/* Scrim layers for readability */}
+        {/* Dark overall base */}
+        <div className="absolute inset-0 bg-black/55" />
+        {/* Top gradient — keeps nav area clean */}
         <div
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80vw] h-[60vh]"
-          style={{
-            background: 'radial-gradient(ellipse at center bottom, rgba(196,169,122,0.07) 0%, transparent 70%)',
-          }}
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(to bottom, rgba(8,8,8,0.7) 0%, transparent 30%)' }}
         />
-        {/* Subtle top-right glow */}
+        {/* Bottom gradient — fades into page */}
         <div
-          className="absolute top-0 right-0 w-[50vw] h-[50vh]"
-          style={{
-            background: 'radial-gradient(ellipse at top right, rgba(196,169,122,0.04) 0%, transparent 60%)',
-          }}
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(to top, rgba(8,8,8,1) 0%, rgba(8,8,8,0.3) 20%, transparent 45%)' }}
         />
-
-        {/* Ambient triangle 1 — large, top-right, very faint outline */}
-        <motion.div
-          className="absolute -top-[20vw] -right-[10vw] opacity-[0.025]"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 200, repeat: Infinity, ease: 'linear' }}
-        >
-          <svg viewBox="0 0 200 175" width="55vw" fill="none" stroke="rgba(240,237,232,0.8)" strokeWidth="0.6">
-            <polygon points="100,8 20,167 180,167" />
-          </svg>
-        </motion.div>
-
-        {/* Ambient triangle 2 — bottom-left, very faint, accent color */}
-        <motion.div
-          className="absolute -bottom-[15vw] -left-[8vw] opacity-[0.03]"
-          animate={{ rotate: -360 }}
-          transition={{ duration: 280, repeat: Infinity, ease: 'linear' }}
-        >
-          <svg viewBox="0 0 200 175" width="45vw" fill="none" stroke="rgba(196,169,122,0.9)" strokeWidth="0.5">
-            <polygon points="100,8 20,167 180,167" />
-          </svg>
-        </motion.div>
-
-        {/* Small accent triangle — center-right */}
-        <motion.div
-          className="absolute top-[25%] right-[8%] opacity-[0.04]"
-          animate={{ rotate: 180 }}
-          transition={{ duration: 120, repeat: Infinity, ease: 'linear' }}
-        >
-          <svg viewBox="0 0 200 175" width="14vw" fill="none" stroke="rgba(196,169,122,1)" strokeWidth="1">
-            <polygon points="100,8 20,167 180,167" />
-          </svg>
-        </motion.div>
+        {/* Warm gold tint at center-bottom for depth */}
+        <div
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[70vw] h-[40vh]"
+          style={{ background: 'radial-gradient(ellipse at center bottom, rgba(196,169,122,0.06) 0%, transparent 70%)' }}
+        />
       </div>
 
       {/* ── Main content ── */}
-      <div className="flex-1 flex flex-col justify-center px-6 md:px-10 max-w-[1320px] mx-auto w-full pt-28 pb-20 relative">
+      <div className="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-10 max-w-[1320px] mx-auto w-full pt-32 pb-20">
 
-        {/* Logo mark animates in first */}
+        {/* Logo mark */}
         <motion.div
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -90,7 +71,7 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: DURATION.base, ease: EASE_EXPO, delay: 0.3 }}
+          transition={{ duration: DURATION.base, ease: EASE_EXPO, delay: 0.25 }}
           className="mb-7 md:mb-8"
         >
           <span className="font-body text-[10px] uppercase tracking-[0.28em] text-[var(--accent)]">
@@ -100,7 +81,7 @@ export function Hero() {
 
         {/* Headline — per-word reveal */}
         <h1
-          className="font-display font-light text-[clamp(4.5rem,9vw,10.5rem)] leading-[0.92] tracking-[-0.03em] text-[var(--text-primary)] mb-8 md:mb-10"
+          className="font-display font-light text-[clamp(4rem,9vw,10.5rem)] leading-[0.92] tracking-[-0.03em] text-white mb-8 md:mb-10"
           aria-label={headline}
         >
           {words.map((word, i) => (
@@ -125,8 +106,8 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: DURATION.slow, ease: EASE_EXPO, delay: 1.05 }}
-          className="font-body text-[clamp(0.9375rem,1.4vw,1.125rem)] text-[var(--text-secondary)] leading-relaxed max-w-[480px] mb-10 md:mb-12"
+          transition={{ duration: DURATION.slow, ease: EASE_EXPO, delay: 1.0 }}
+          className="font-body text-[clamp(0.9375rem,1.4vw,1.125rem)] text-white/70 leading-relaxed max-w-[480px] mb-10 md:mb-12"
         >
           9thside creates premium digital and visual experiences across web, photography, film, and brand.
         </motion.p>
@@ -135,24 +116,24 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: DURATION.slow, ease: EASE_EXPO, delay: 1.2 }}
+          transition={{ duration: DURATION.slow, ease: EASE_EXPO, delay: 1.15 }}
           className="flex flex-wrap items-center gap-4"
         >
           <Link
             href="/contact"
-            className="font-body text-[11px] uppercase tracking-[0.18em] bg-[var(--text-primary)] text-bg px-7 py-3.5 hover:bg-white transition-colors duration-300"
+            className="font-body text-[11px] uppercase tracking-[0.18em] bg-white text-[#080808] px-7 py-3.5 hover:bg-[var(--accent)] hover:text-[#080808] transition-colors duration-300"
           >
             Start a Project
           </Link>
           <Link
             href="/work"
-            className="font-body text-[11px] uppercase tracking-[0.18em] border border-[var(--border-md)] text-[var(--text-secondary)] px-7 py-3.5 hover:text-[var(--text-primary)] hover:border-[rgba(240,237,232,0.28)] transition-all duration-300"
+            className="font-body text-[11px] uppercase tracking-[0.18em] border border-white/30 text-white/80 px-7 py-3.5 hover:text-white hover:border-white/60 transition-all duration-300"
           >
             View Work
           </Link>
           <Link
             href="/services"
-            className="font-body text-[11px] uppercase tracking-[0.18em] text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors duration-300 ml-2 hidden md:block"
+            className="font-body text-[11px] uppercase tracking-[0.18em] text-white/40 hover:text-white/70 transition-colors duration-300 ml-2 hidden md:block"
           >
             Our Services →
           </Link>
@@ -166,14 +147,14 @@ export function Hero() {
           className="hidden md:flex flex-col items-center gap-3 absolute bottom-14 right-10"
         >
           <span
-            className="font-body text-[9px] uppercase tracking-[0.22em] text-[var(--text-muted)]"
+            className="font-body text-[9px] uppercase tracking-[0.22em] text-white/30"
             style={{ writingMode: 'vertical-rl' }}
           >
             Scroll
           </span>
           <motion.div
             className="w-[1px] h-10 origin-top"
-            style={{ background: 'linear-gradient(to bottom, var(--text-muted), transparent)' }}
+            style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.25), transparent)' }}
             animate={{ scaleY: [0, 1, 0] }}
             transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut', delay: 2.2 }}
           />
@@ -184,8 +165,8 @@ export function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 0.8 }}
-        className="border-t border-[var(--border)] py-4"
+        transition={{ delay: 1.5, duration: 0.8 }}
+        className="relative z-10 border-t border-white/10 py-4 bg-[rgba(8,8,8,0.6)] backdrop-blur-sm"
       >
         <Marquee speed={32} />
       </motion.div>
