@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { LogoImage } from '@/components/ui/Logo'
 
 const footerNav = {
   Work: [
@@ -31,9 +32,9 @@ export function Footer() {
           <div>
             <Link
               href="/"
-              className="font-display italic text-[1.75rem] font-light text-[var(--text-primary)] tracking-tight leading-none block mb-4 hover:opacity-75 transition-opacity duration-300"
+              className="inline-block mb-4 hover:opacity-75 transition-opacity duration-300"
             >
-              9thside
+              <LogoImage variant="full" color="white" width={56} />
             </Link>
             <p className="font-body text-sm text-[var(--text-secondary)] leading-relaxed mb-8 max-w-[280px]">
               Digital and visual experiences built with taste. Web, photography, film, and brand.

@@ -1,43 +1,55 @@
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
-interface LogoImageProps {
+interface LogoProps {
   width?: number
   className?: string
+  variant?: 'full' | 'mark'
+  color?: 'white' | 'black'
 }
 
-// Uses the actual 9thside logo image.
-// mix-blend-mode: screen makes the black background disappear on dark surfaces,
-// leaving only the white logo visible.
-export function LogoImage({ width = 96, className }: LogoImageProps) {
-  const height = Math.round(width * (816 / 1456))
+// Full logo (triangles + 9THSIDE wordmark) or mark only (triangles)
+// white = for dark backgrounds, black = for light backgrounds
+export function LogoImage({
+  width = 96,
+  className,
+  variant = 'full',
+  color = 'white',
+}: LogoProps) {
+  const src =
+    variant === 'full'
+      ? color === 'white'
+        ? '/media/logo-white-full.png'
+        : '/media/logo-black-full.png'
+      : color === 'white'
+        ? '/media/logo-white-mark.png'
+        : '/media/logo-black-mark.png'
+
+  // All images are square (1:1)
   return (
     <Image
-      src="/media/9thside-logo.JPG"
+      src={src}
       alt="9thside"
       width={width}
-      height={height}
+      height={width}
       className={cn('object-contain', className)}
-      style={{ mixBlendMode: 'screen' }}
       priority
     />
   )
 }
 
-// Keep LogoMark as a lightweight SVG fallback (used in service pages, etc.)
+// Lightweight SVG mark — kept as fallback for service pages / decorative use
 interface LogoMarkProps {
   size?: number
   className?: string
 }
 
 export function LogoMark({ size = 32, className }: LogoMarkProps) {
-  const w = size
-  const h = Math.round(size * 0.78)
   return (
     <svg
       viewBox="0 0 200 156"
-      width={w}
-      height={h}
+      width={size}
+      height={Math.round(size * 0.78)}
       fill="currentColor"
       className={className}
       aria-hidden="true"

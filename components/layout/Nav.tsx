@@ -82,7 +82,7 @@ export function Nav() {
         <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-[68px] flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="hover:opacity-80 transition-opacity duration-300 flex-shrink-0">
-            <LogoImage width={110} />
+            <LogoImage variant="full" color="white" width={52} />
           </Link>
 
           {/* Desktop Nav */}
@@ -150,8 +150,8 @@ export function Nav() {
             exit="exit"
           >
             {/* Mobile menu logo */}
-            <div className="absolute top-5 left-6">
-              <LogoImage width={100} />
+            <div className="absolute top-4 left-6">
+              <LogoImage variant="full" color="white" width={52} />
             </div>
 
             {/* Nav Links */}

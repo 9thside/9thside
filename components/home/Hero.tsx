@@ -62,9 +62,9 @@ export function Hero() {
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: DURATION.base, ease: EASE_EXPO, delay: 0.1 }}
-          className="mb-8 md:mb-10"
+          className="mb-6 md:mb-8"
         >
-          <LogoImage width={140} />
+          <LogoImage variant="mark" color="white" width={64} />
         </motion.div>
 
         {/* Label */}
