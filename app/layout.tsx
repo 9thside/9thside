@@ -7,6 +7,7 @@ import { SmoothScroll } from '@/components/shared/SmoothScroll'
 import { CursorFollower } from '@/components/ui/CursorFollower'
 import { ScrollProgress } from '@/components/shared/ScrollProgress'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const cormorant = Cormorant({
   subsets: ['latin'],
@@ -59,6 +60,7 @@ export default function RootLayout({
           <Footer />
         </SmoothScroll>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
