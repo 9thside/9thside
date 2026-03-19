@@ -11,6 +11,7 @@ export interface Project {
   image: string
   heroImage: string
   videoUrl?: string
+  gallery?: string[]
   tags?: string[]
 }
 
@@ -57,17 +58,31 @@ export const projects: Project[] = [
     tags: ['Direction', 'Production', 'Commercial'],
   },
   {
-    id: 'niagara-wedding',
-    title: 'Vineyard Wedding — Niagara',
+    id: 'tharif-zahraa',
+    title: 'Tharif & Zahraa',
     category: 'wedding',
     categoryLabel: 'Wedding',
-    description: 'Full-day coverage across a Niagara vineyard estate — photography and cinematic highlight film.',
-    year: '2023',
+    description: 'A full-day pre-shoot and wedding coverage across Mississauga — documentary moments, intimate portraits, and the kind of joy that photographs itself.',
+    year: '2024',
     span: 'standard',
     gradient: 'linear-gradient(145deg, #160f04 0%, #302010 50%, #4a3218 100%)',
-    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900&h=700&auto=format&fit=crop&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=2400&h=1000&auto=format&fit=crop&q=80',
-    tags: ['Photography', 'Film', 'Full Day'],
+    image: '/media/weddings/tharif-zahraa/cover.jpg',
+    heroImage: '/media/weddings/tharif-zahraa/hero.jpg',
+    gallery: [
+      '/media/weddings/tharif-zahraa/01.jpg',
+      '/media/weddings/tharif-zahraa/02.jpg',
+      '/media/weddings/tharif-zahraa/03.jpg',
+      '/media/weddings/tharif-zahraa/04.jpg',
+      '/media/weddings/tharif-zahraa/05.jpg',
+      '/media/weddings/tharif-zahraa/06.jpg',
+      '/media/weddings/tharif-zahraa/07.jpg',
+      '/media/weddings/tharif-zahraa/08.jpg',
+      '/media/weddings/tharif-zahraa/09.jpg',
+      '/media/weddings/tharif-zahraa/10.jpg',
+      '/media/weddings/tharif-zahraa/11.jpg',
+      '/media/weddings/tharif-zahraa/12.jpg',
+    ],
+    tags: ['Photography', 'Pre-Shoot', 'Documentary'],
   },
   {
     id: 'real-estate-suite',
