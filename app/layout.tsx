@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer'
 import { SmoothScroll } from '@/components/shared/SmoothScroll'
 import { CursorFollower } from '@/components/ui/CursorFollower'
 import { ScrollProgress } from '@/components/shared/ScrollProgress'
+import { Analytics } from '@vercel/analytics/next'
 
 const cormorant = Cormorant({
   subsets: ['latin'],
@@ -57,6 +58,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   )
