@@ -46,8 +46,8 @@ export default async function AlbumPage({ params }: Props) {
         <Photo photo={album.cover} fill priority quality={85} sizes="100vw" className="kenburns" />
         <div className="absolute inset-0 bg-gradient-to-t from-night via-night/25 to-night/55" />
         <div className="shell relative pb-14 pt-40 md:pb-20">
-          <p className="eyebrow text-cream/70">{album.categoryLabel}</p>
-          <h1 className="display mt-5 text-[clamp(3.25rem,10vw,10rem)] italic">{album.title}</h1>
+          <p className="eyebrow text-accent">{album.categoryLabel}</p>
+          <h1 className="display mt-4 text-[clamp(3.25rem,11vw,11.5rem)]">{album.title}</h1>
         </div>
       </section>
 
@@ -64,7 +64,7 @@ export default async function AlbumPage({ params }: Props) {
         </Reveal>
         {album.description && (
           <Reveal delay={0.1}>
-            <p className="display text-[clamp(1.6rem,3vw,2.75rem)] leading-[1.2]">{album.description}</p>
+            <p className="statement text-[clamp(1.6rem,3vw,2.75rem)]">{album.description}</p>
           </Reveal>
         )}
       </section>
@@ -83,12 +83,12 @@ export default async function AlbumPage({ params }: Props) {
           />
           <div className="shell relative py-32 text-center md:py-48">
             <p className="eyebrow text-cream/70">Next story</p>
-            <p className="display mt-5 text-[clamp(2.75rem,8vw,7rem)] italic">{next.title}</p>
+            <p className="display mt-5 text-[clamp(3.5rem,12vw,11rem)]">{next.title}</p>
           </div>
         </Link>
       )}
 
-      <InquiryBand eyebrow="Like what you see?" title="Let’s make yours." />
+      <InquiryBand eyebrow="Like what you see?" title={<>Let’s make <em>yours.</em></>} />
     </>
   )
 }

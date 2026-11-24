@@ -1,20 +1,22 @@
 import type { Config } from 'tailwindcss'
 
+// Dark, cinematic palette. "paper" is the page background and "ink" the text
+// colour, so swapping these two values re-themes the whole site.
 const config: Config = {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './lib/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        paper: '#f4f0e9',
-        'paper-deep': '#eae4d8',
-        ink: '#161412',
-        night: '#100f0d',
-        'night-soft': '#1a1815',
-        cream: '#f1ece2',
-        accent: '#a5825a',
+        paper: '#0b0b0c',
+        'paper-deep': '#151516',
+        ink: '#f2efe9',
+        night: '#0b0b0c',
+        cream: '#f2efe9',
+        accent: '#ff4b1f',
       },
       fontFamily: {
-        display: ['var(--font-display)', 'Georgia', 'serif'],
+        display: ['var(--font-serif)', 'Georgia', 'serif'],
+        poster: ['var(--font-poster)', 'Impact', 'sans-serif'],
         body: ['var(--font-body)', 'system-ui', 'sans-serif'],
       },
       transitionTimingFunction: {

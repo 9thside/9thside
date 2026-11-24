@@ -17,7 +17,7 @@ export default function PortfolioPage() {
         eyebrow="Portfolio"
         title={
           <>
-            Stories, told in <em>full.</em>
+            The <em>whole</em> story.
           </>
         }
         intro="Complete albums rather than a highlight reel — because a day is more than its ten best frames."

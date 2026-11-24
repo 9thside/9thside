@@ -28,7 +28,7 @@ export default function AboutPage() {
         eyebrow="About"
         title={
           <>
-            Hello, I&rsquo;m <em>Nabeel.</em>
+            The guy behind <em>the camera.</em>
           </>
         }
       />
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <Reveal>{first && <Photo photo={first} sizes="(min-width: 1024px) 45vw, 100vw" className="h-auto w-full" />}</Reveal>
         <div className="self-center">
           <Reveal>
-            <blockquote className="display text-[clamp(1.9rem,3.4vw,3.25rem)] italic leading-[1.12]">
+            <blockquote className="statement text-[clamp(1.9rem,3.4vw,3.25rem)] italic">
               &ldquo;I started with a camera and a conviction: that the way something looks shapes how it is
               remembered.&rdquo;
             </blockquote>
@@ -71,7 +71,7 @@ export default function AboutPage() {
           <div>
             <Reveal>
               <p className="eyebrow text-accent">How I work</p>
-              <h2 className="display mt-6 text-[clamp(2.5rem,5vw,4.5rem)]">
+              <h2 className="display mt-6 text-[clamp(3rem,7vw,7rem)]">
                 Three things I <em>will not</em> compromise on.
               </h2>
             </Reveal>
@@ -90,7 +90,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <InquiryBand eyebrow="Say hello" title="Let’s meet." />
+      <InquiryBand eyebrow="Say hello" title={<>Let’s <em>meet.</em></>} />
     </>
   )
 }

@@ -25,7 +25,8 @@ export function Gallery({ photos }: { photos: PhotoData[] }) {
               type="button"
               onClick={() => setOpen(i)}
               aria-label={`Open photograph ${i + 1} of ${photos.length}`}
-              className="group relative cursor-zoom-in overflow-hidden bg-paper-deep"
+              data-cursor="Open"
+              className="group relative overflow-hidden bg-paper-deep"
               style={{ flexGrow: ratio, flexBasis: `calc(var(--row-h) * ${ratio})`, aspectRatio: ratio }}
             >
               <Photo

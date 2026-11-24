@@ -22,10 +22,7 @@ export function Nav() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Pages that open on a dark, full-bleed photograph get a light nav until you scroll.
-  const overPhoto = pathname === '/' || pathname === '/weddings' || pathname.startsWith('/portfolio/')
   const solid = scrolled && !open
-  const light = open || (overPhoto && !scrolled)
 
   useEffect(() => setOpen(false), [pathname])
   useEffect(() => {
@@ -37,15 +34,14 @@ export function Nav() {
     <>
       <header
         className={cn(
-          'fixed inset-x-0 top-0 z-50 border-b transition-[background-color,border-color,color] duration-500',
-          light ? 'text-cream' : 'text-ink',
-          solid ? 'border-ink/10 bg-paper/90 backdrop-blur-md' : 'border-transparent'
+          'fixed inset-x-0 top-0 z-50 border-b text-cream transition-[background-color,border-color] duration-500',
+          solid ? 'border-ink/10 bg-paper/80 backdrop-blur-md' : 'border-transparent'
         )}
       >
         <div className={cn('shell flex items-center justify-between transition-[height] duration-500', solid ? 'h-16 md:h-20' : 'h-20 md:h-24')}>
           <Link href="/" aria-label="9thside — home" className="block">
             <Image
-              src={light ? '/media/logo-white-full-trim.png' : '/media/logo-black-full-trim.png'}
+              src="/media/logo-white-full-trim.png"
               alt="9thside"
               width={900}
               height={683}
@@ -66,16 +62,13 @@ export function Nav() {
               >
                 {link.label}
                 {pathname.startsWith(link.href) && (
-                  <span className="absolute -bottom-0.5 left-0 h-px w-full bg-current" />
+                  <span className="absolute -bottom-0.5 left-0 h-px w-full bg-accent" />
                 )}
               </Link>
             ))}
             <Link
               href="/contact"
-              className={cn(
-                'eyebrow border px-5 py-3 transition-colors duration-300',
-                light ? 'border-cream/60 hover:bg-cream hover:text-ink' : 'border-ink/40 hover:bg-ink hover:text-paper'
-              )}
+              className="eyebrow rounded-full bg-accent px-5 py-3 font-semibold text-night transition-colors duration-300 hover:bg-cream"
             >
               Inquire
             </Link>
@@ -110,7 +103,7 @@ export function Nav() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: EASE_EXPO, delay: 0.05 + i * 0.06 }}
                 >
-                  <Link href={link.href} className="display block py-2 text-[3.25rem]">
+                  <Link href={link.href} className="display block py-1 text-[4.75rem]">
                     {link.label}
                   </Link>
                 </motion.div>

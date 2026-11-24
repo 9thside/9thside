@@ -18,7 +18,7 @@ export default function ContactPage() {
         eyebrow="Inquire"
         title={
           <>
-            Tell me about <em>your day.</em>
+            Let’s <em>talk.</em>
           </>
         }
         intro="The more you share, the better I can help — your date, your venue, and the kind of photographs you are hoping for."

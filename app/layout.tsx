@@ -1,25 +1,33 @@
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Inter } from 'next/font/google'
+import { Archivo, Instrument_Serif, Inter } from 'next/font/google'
 import './globals.css'
 import { Nav } from '@/components/layout/Nav'
 import { Footer } from '@/components/layout/Footer'
 import { SmoothScroll } from '@/components/shared/SmoothScroll'
+import { Intro } from '@/components/shared/Intro'
+import { Cursor } from '@/components/shared/Cursor'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { site } from '@/lib/site'
 import { highlights } from '@/lib/albums'
 
-const display = Cormorant_Garamond({
+const poster = Archivo({
   subsets: ['latin'],
-  weight: ['300', '400', '500'],
+  axes: ['wdth'],
+  variable: '--font-poster',
+  display: 'swap',
+})
+
+const serif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
   style: ['normal', 'italic'],
-  variable: '--font-display',
+  variable: '--font-serif',
   display: 'swap',
 })
 
 const body = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500'],
   variable: '--font-body',
   display: 'swap',
 })
@@ -43,7 +51,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title, description: site.description },
 }
 
-export const viewport: Viewport = { themeColor: '#100f0d' }
+export const viewport: Viewport = { themeColor: '#0b0b0c' }
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -62,13 +70,16 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" className={`${poster.variable} ${serif.variable} ${body.variable}`}>
       <body>
-        <SmoothScroll>
-          <Nav />
-          <main>{children}</main>
-          <Footer />
-        </SmoothScroll>
+        <Intro>
+          <SmoothScroll>
+            <Nav />
+            <main>{children}</main>
+            <Footer />
+          </SmoothScroll>
+        </Intro>
+        <Cursor />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Analytics />
         <SpeedInsights />

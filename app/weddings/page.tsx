@@ -62,8 +62,8 @@ export default function WeddingsPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-night via-night/30 to-night/50" />
         <div className="shell relative flex min-h-[100svh] flex-col justify-end pb-16 pt-40 md:pb-24">
           <p className="eyebrow text-cream/70">Weddings</p>
-          <h1 className="display mt-6 max-w-5xl text-[clamp(3.25rem,9vw,9.5rem)]">
-            Your whole day, <em>told honestly.</em>
+          <h1 className="display mt-6 max-w-6xl text-[clamp(4rem,13vw,13rem)]">
+            Your day, <em>unscripted.</em>
           </h1>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/contact?type=Wedding" className="btn-light">
@@ -76,7 +76,7 @@ export default function WeddingsPage() {
       <section className="shell grid gap-14 py-28 md:py-44 lg:grid-cols-2 lg:gap-24">
         <Reveal>
           <p className="eyebrow text-accent">The approach</p>
-          <p className="display mt-8 text-[clamp(2rem,3.8vw,3.75rem)] leading-[1.1]">
+          <p className="statement mt-8 text-[clamp(2rem,3.8vw,3.75rem)]">
             The best wedding photographs are rarely the ones anyone posed for. They are the look across the room, the
             hand on a shoulder, <em>your father pretending not to cry.</em>
           </p>
@@ -107,7 +107,7 @@ export default function WeddingsPage() {
         <div className="shell py-28 md:py-40">
           <Reveal>
             <p className="eyebrow text-accent">What is included</p>
-            <h2 className="display mt-6 max-w-3xl text-[clamp(2.5rem,5.5vw,5rem)]">
+            <h2 className="display mt-6 max-w-3xl text-[clamp(3rem,8vw,8rem)]">
               Everything you need, <em>nothing you do not.</em>
             </h2>
           </Reveal>
@@ -143,7 +143,7 @@ export default function WeddingsPage() {
       <section className="shell grid gap-12 pb-28 md:pb-44 lg:grid-cols-[1fr_2fr]">
         <Reveal>
           <p className="eyebrow text-accent">Good to know</p>
-          <h2 className="display mt-6 text-[clamp(2.5rem,4.5vw,4.25rem)]">
+          <h2 className="display mt-6 text-[clamp(3rem,7vw,7rem)]">
             Questions, <em>answered.</em>
           </h2>
         </Reveal>
@@ -152,7 +152,7 @@ export default function WeddingsPage() {
         </Reveal>
       </section>
 
-      <InquiryBand eyebrow="Weddings" title="Is your date free?" href="/contact?type=Wedding" />
+      <InquiryBand eyebrow="Weddings" title={<>Is your date <em>free?</em></>} href="/contact?type=Wedding" />
     </>
   )
 }
