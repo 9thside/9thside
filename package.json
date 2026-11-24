@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "albums": "node scripts/build-albums.mjs",
+    "album": "node scripts/import-album.mjs",
+    "predev": "node scripts/build-albums.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/build-albums.mjs",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
@@ -29,5 +32,6 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.0"
-  }
+  },
+  "description": "9thside \u2014 wedding and portrait photography, Toronto"
 }

@@ -1,0 +1,336 @@
+{
+ "albums": [
+  {
+   "slug": "tharif-zahraa",
+   "title": "Tharif & Zahraa",
+   "category": "wedding",
+   "categoryLabel": "Weddings",
+   "location": "Mississauga, Ontario",
+   "date": "2024-06-01",
+   "description": "A pre-shoot and wedding day by the water in Mississauga. Overcast light, a red dupatta against all that green, and two people who kept making each other laugh.",
+   "order": 0,
+   "cover": {
+    "file": "cover.jpg",
+    "src": "/photos/tharif-zahraa/cover.jpg",
+    "width": 1024,
+    "height": 683,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAsAA4BaJQBOgCHP4D830AD+thW3+ebQwvaMhayALMxT4KBPdWxM49z5EHt4AoPROlpJzxFOt5yy5ptevlnkf2hx1TYrqVgxbrk5BFmCNMAA",
+    "alt": "Tharif & Zahraa — photograph 13"
+   },
+   "hero": {
+    "file": "hero.jpg",
+    "src": "/photos/tharif-zahraa/hero.jpg",
+    "width": 1024,
+    "height": 1280,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwAgCdASoNABAAA4BaJQBWHf9gwjX4uo3gvKOAAP64DipYOwk45AdgOEU/FzBoFFvMsgvN+0hmE7OC7NUj/5FckQ31FYEip0NILIkXdtZm0vqRpd5W0xmYvzOnAkcsMqAdO0qKiap4Hv4aU4JaAA==",
+    "alt": "Tharif & Zahraa — photograph 14"
+   },
+   "featured": [
+    {
+     "file": "hero.jpg",
+     "src": "/photos/tharif-zahraa/hero.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwAgCdASoNABAAA4BaJQBWHf9gwjX4uo3gvKOAAP64DipYOwk45AdgOEU/FzBoFFvMsgvN+0hmE7OC7NUj/5FckQ31FYEip0NILIkXdtZm0vqRpd5W0xmYvzOnAkcsMqAdO0qKiap4Hv4aU4JaAA==",
+     "alt": "Tharif & Zahraa — photograph 14"
+    },
+    {
+     "file": "01.jpg",
+     "src": "/photos/tharif-zahraa/01.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoNABAAA4BaJYgCdAEOeG9qEuqAAP7x3DAEG34T6873DzkSDC/EFM16H3a9sU1Pff3pTe3yIAoza9PRiZoxEUESbMR117QbtQ6QSgRkzv0DNZONwIrd7AAA",
+     "alt": "Tharif & Zahraa — photograph 1"
+    },
+    {
+     "file": "10.jpg",
+     "src": "/photos/tharif-zahraa/10.jpg",
+     "width": 1024,
+     "height": 683,
+     "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsAA4BaJZQC7H8AGBFZE8AA/uetuWubAEiSdhGrSJzwVleQh/LwWOSPZomAPStaExWE8UeHwLWBVYtclbuaHVOfKc0W5AwaEsAJ0SgQAAAA",
+     "alt": "Tharif & Zahraa — photograph 10"
+    },
+    {
+     "file": "07.jpg",
+     "src": "/photos/tharif-zahraa/07.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoNABAAA4BaJYgCdAEOpEeaV9/AAP7oSg20r0w5vkhf/owW0T8wnQfLBuVEJKY2iSu38O8V9Jmh7Ye2o7VPeI4fd1cNOX/J+4JWmzUBCd2RWCt/0Mhu6GLyEaqdaxpwxEXAAA==",
+     "alt": "Tharif & Zahraa — photograph 7"
+    },
+    {
+     "file": "05.jpg",
+     "src": "/photos/tharif-zahraa/05.jpg",
+     "width": 1024,
+     "height": 1434,
+     "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoLABAAA4BaJYwC7AERH9S1nLogAP7vm3Fy+CMi9Nhe991bZVlaG8eBu1PbdRTNMprQ3MQSQFCkOgmSex7y/NxtyLoBy7lLNXxae6c/bwAAAA==",
+     "alt": "Tharif & Zahraa — photograph 5"
+    },
+    {
+     "file": "03.jpg",
+     "src": "/photos/tharif-zahraa/03.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoNABAAA4BaJYgCdAEXfqHXvxiQAP7auqz2Nx9UnQuHD/yT3PyqHxzcNm4LeOoEi7hqLxUGcntKq2RtkHQ9s0m5Ys3begeHF08VpAMLxbBSh6MuYAA=",
+     "alt": "Tharif & Zahraa — photograph 3"
+    },
+    {
+     "file": "08.jpg",
+     "src": "/photos/tharif-zahraa/08.jpg",
+     "width": 1024,
+     "height": 743,
+     "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAwAA4BaJZQC7AERHJoPO7xJAAD+78RxBgVfZaDzf4O2X/ps2UA0e4CI7ZT9FjTdPbWHV1+VUIuwZorFPPYVPZeeGOYhP8W2q59IAAA=",
+     "alt": "Tharif & Zahraa — photograph 8"
+    },
+    {
+     "file": "09.jpg",
+     "src": "/photos/tharif-zahraa/09.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoNABAAA4BaJZAAAxU+OmW8ypbUAAD+7eGTbrsv2aHnZLV3HVmPhqsVVtfNtGjRIeKTTKOprQebEdUSwYJjj6Jye2Kq9FzrsGQmEFS5eJlJFVHxQ6g1h/IGCtIAAA==",
+     "alt": "Tharif & Zahraa — photograph 9"
+    }
+   ],
+   "photos": [
+    {
+     "file": "01.jpg",
+     "src": "/photos/tharif-zahraa/01.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoNABAAA4BaJYgCdAEOeG9qEuqAAP7x3DAEG34T6873DzkSDC/EFM16H3a9sU1Pff3pTe3yIAoza9PRiZoxEUESbMR117QbtQ6QSgRkzv0DNZONwIrd7AAA",
+     "alt": "Tharif & Zahraa — photograph 1"
+    },
+    {
+     "file": "02.jpg",
+     "src": "/photos/tharif-zahraa/02.jpg",
+     "width": 1024,
+     "height": 683,
+     "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAsAA4BaJYwC7IExGZU038poAAD+62ojFHKgiXTefMA63tk/LGWhx6Yx2jHWqy3HxAm+ZIEABbP/oDhqPJmmeliRgAByPEbX84AA",
+     "alt": "Tharif & Zahraa — photograph 2"
+    },
+    {
+     "file": "03.jpg",
+     "src": "/photos/tharif-zahraa/03.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoNABAAA4BaJYgCdAEXfqHXvxiQAP7auqz2Nx9UnQuHD/yT3PyqHxzcNm4LeOoEi7hqLxUGcntKq2RtkHQ9s0m5Ys3begeHF08VpAMLxbBSh6MuYAA=",
+     "alt": "Tharif & Zahraa — photograph 3"
+    },
+    {
+     "file": "04.jpg",
+     "src": "/photos/tharif-zahraa/04.jpg",
+     "width": 1024,
+     "height": 1434,
+     "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoLABAAA4BaJYgCdAEDfpsoXsAR0AD+8U5Nw5ktGwsOiyjM3jbsJrAbVmL5HDn0R6EA0GDeXb9ooHIfkKt5Wk1YWJgBMd+Nyf6vgAAA",
+     "alt": "Tharif & Zahraa — photograph 4"
+    },
+    {
+     "file": "05.jpg",
+     "src": "/photos/tharif-zahraa/05.jpg",
+     "width": 1024,
+     "height": 1434,
+     "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoLABAAA4BaJYwC7AERH9S1nLogAP7vm3Fy+CMi9Nhe991bZVlaG8eBu1PbdRTNMprQ3MQSQFCkOgmSex7y/NxtyLoBy7lLNXxae6c/bwAAAA==",
+     "alt": "Tharif & Zahraa — photograph 5"
+    },
+    {
+     "file": "06.jpg",
+     "src": "/photos/tharif-zahraa/06.jpg",
+     "width": 1024,
+     "height": 683,
+     "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJYwCdADwkfhjU4AA/uozy+DxztmxicCm4diBqY75u69YriZKEWzEy0FaB0yLSF9Freueo1lIq3FvSWX/H4SAlcX1pVjR1YvCmXeqYRzYAA==",
+     "alt": "Tharif & Zahraa — photograph 6"
+    },
+    {
+     "file": "07.jpg",
+     "src": "/photos/tharif-zahraa/07.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoNABAAA4BaJYgCdAEOpEeaV9/AAP7oSg20r0w5vkhf/owW0T8wnQfLBuVEJKY2iSu38O8V9Jmh7Ye2o7VPeI4fd1cNOX/J+4JWmzUBCd2RWCt/0Mhu6GLyEaqdaxpwxEXAAA==",
+     "alt": "Tharif & Zahraa — photograph 7"
+    },
+    {
+     "file": "08.jpg",
+     "src": "/photos/tharif-zahraa/08.jpg",
+     "width": 1024,
+     "height": 743,
+     "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAwAA4BaJZQC7AERHJoPO7xJAAD+78RxBgVfZaDzf4O2X/ps2UA0e4CI7ZT9FjTdPbWHV1+VUIuwZorFPPYVPZeeGOYhP8W2q59IAAA=",
+     "alt": "Tharif & Zahraa — photograph 8"
+    },
+    {
+     "file": "09.jpg",
+     "src": "/photos/tharif-zahraa/09.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoNABAAA4BaJZAAAxU+OmW8ypbUAAD+7eGTbrsv2aHnZLV3HVmPhqsVVtfNtGjRIeKTTKOprQebEdUSwYJjj6Jye2Kq9FzrsGQmEFS5eJlJFVHxQ6g1h/IGCtIAAA==",
+     "alt": "Tharif & Zahraa — photograph 9"
+    },
+    {
+     "file": "10.jpg",
+     "src": "/photos/tharif-zahraa/10.jpg",
+     "width": 1024,
+     "height": 683,
+     "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsAA4BaJZQC7H8AGBFZE8AA/uetuWubAEiSdhGrSJzwVleQh/LwWOSPZomAPStaExWE8UeHwLWBVYtclbuaHVOfKc0W5AwaEsAJ0SgQAAAA",
+     "alt": "Tharif & Zahraa — photograph 10"
+    },
+    {
+     "file": "11.jpg",
+     "src": "/photos/tharif-zahraa/11.jpg",
+     "width": 1024,
+     "height": 1433,
+     "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoLABAAA4BaJaACdAEQNjXo2GjgAP7voO1bxRQaUoxX+4cw57VI2Be0BNklhXTuN5c7xsuLF18qbAw0KI7UC+FVe16fLQzTqbiRqRVKOKmMy3eSs/llD4nMwvfhkT/5YAA=",
+     "alt": "Tharif & Zahraa — photograph 11"
+    },
+    {
+     "file": "12.jpg",
+     "src": "/photos/tharif-zahraa/12.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAQCdASoNABAAA4BaJZwAD5UQaQk9hgAA/uGerBH10Wo9c4ALaVW3V1eftX30XEJtj/x6Y7m3tsOBOTI26RahxrqlzPodgdiqFiRbm7SQu8xlmvPWT62/uoqzL5zmS7AEjIEAAAA=",
+     "alt": "Tharif & Zahraa — photograph 12"
+    },
+    {
+     "file": "cover.jpg",
+     "src": "/photos/tharif-zahraa/cover.jpg",
+     "width": 1024,
+     "height": 683,
+     "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAsAA4BaJQBOgCHP4D830AD+thW3+ebQwvaMhayALMxT4KBPdWxM49z5EHt4AoPROlpJzxFOt5yy5ptevlnkf2hx1TYrqVgxbrk5BFmCNMAA",
+     "alt": "Tharif & Zahraa — photograph 13"
+    },
+    {
+     "file": "hero.jpg",
+     "src": "/photos/tharif-zahraa/hero.jpg",
+     "width": 1024,
+     "height": 1280,
+     "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwAgCdASoNABAAA4BaJQBWHf9gwjX4uo3gvKOAAP64DipYOwk45AdgOEU/FzBoFFvMsgvN+0hmE7OC7NUj/5FckQ31FYEip0NILIkXdtZm0vqRpd5W0xmYvzOnAkcsMqAdO0qKiap4Hv4aU4JaAA==",
+     "alt": "Tharif & Zahraa — photograph 14"
+    }
+   ]
+  }
+ ],
+ "highlights": {
+  "hero": [
+   {
+    "file": "hero.jpg",
+    "src": "/photos/tharif-zahraa/hero.jpg",
+    "width": 1024,
+    "height": 1280,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwAgCdASoNABAAA4BaJQBWHf9gwjX4uo3gvKOAAP64DipYOwk45AdgOEU/FzBoFFvMsgvN+0hmE7OC7NUj/5FckQ31FYEip0NILIkXdtZm0vqRpd5W0xmYvzOnAkcsMqAdO0qKiap4Hv4aU4JaAA==",
+    "alt": "Tharif & Zahraa — photograph 14",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "01.jpg",
+    "src": "/photos/tharif-zahraa/01.jpg",
+    "width": 1024,
+    "height": 1280,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoNABAAA4BaJYgCdAEOeG9qEuqAAP7x3DAEG34T6873DzkSDC/EFM16H3a9sU1Pff3pTe3yIAoza9PRiZoxEUESbMR117QbtQ6QSgRkzv0DNZONwIrd7AAA",
+    "alt": "Tharif & Zahraa — photograph 1",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "09.jpg",
+    "src": "/photos/tharif-zahraa/09.jpg",
+    "width": 1024,
+    "height": 1280,
+    "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoNABAAA4BaJZAAAxU+OmW8ypbUAAD+7eGTbrsv2aHnZLV3HVmPhqsVVtfNtGjRIeKTTKOprQebEdUSwYJjj6Jye2Kq9FzrsGQmEFS5eJlJFVHxQ6g1h/IGCtIAAA==",
+    "alt": "Tharif & Zahraa — photograph 9",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "03.jpg",
+    "src": "/photos/tharif-zahraa/03.jpg",
+    "width": 1024,
+    "height": 1280,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoNABAAA4BaJYgCdAEXfqHXvxiQAP7auqz2Nx9UnQuHD/yT3PyqHxzcNm4LeOoEi7hqLxUGcntKq2RtkHQ9s0m5Ys3begeHF08VpAMLxbBSh6MuYAA=",
+    "alt": "Tharif & Zahraa — photograph 3",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   }
+  ],
+  "selected": [
+   {
+    "file": "10.jpg",
+    "src": "/photos/tharif-zahraa/10.jpg",
+    "width": 1024,
+    "height": 683,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsAA4BaJZQC7H8AGBFZE8AA/uetuWubAEiSdhGrSJzwVleQh/LwWOSPZomAPStaExWE8UeHwLWBVYtclbuaHVOfKc0W5AwaEsAJ0SgQAAAA",
+    "alt": "Tharif & Zahraa — photograph 10",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "07.jpg",
+    "src": "/photos/tharif-zahraa/07.jpg",
+    "width": 1024,
+    "height": 1280,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoNABAAA4BaJYgCdAEOpEeaV9/AAP7oSg20r0w5vkhf/owW0T8wnQfLBuVEJKY2iSu38O8V9Jmh7Ye2o7VPeI4fd1cNOX/J+4JWmzUBCd2RWCt/0Mhu6GLyEaqdaxpwxEXAAA==",
+    "alt": "Tharif & Zahraa — photograph 7",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "08.jpg",
+    "src": "/photos/tharif-zahraa/08.jpg",
+    "width": 1024,
+    "height": 743,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAwAA4BaJZQC7AERHJoPO7xJAAD+78RxBgVfZaDzf4O2X/ps2UA0e4CI7ZT9FjTdPbWHV1+VUIuwZorFPPYVPZeeGOYhP8W2q59IAAA=",
+    "alt": "Tharif & Zahraa — photograph 8",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "05.jpg",
+    "src": "/photos/tharif-zahraa/05.jpg",
+    "width": 1024,
+    "height": 1434,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoLABAAA4BaJYwC7AERH9S1nLogAP7vm3Fy+CMi9Nhe991bZVlaG8eBu1PbdRTNMprQ3MQSQFCkOgmSex7y/NxtyLoBy7lLNXxae6c/bwAAAA==",
+    "alt": "Tharif & Zahraa — photograph 5",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "02.jpg",
+    "src": "/photos/tharif-zahraa/02.jpg",
+    "width": 1024,
+    "height": 683,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAsAA4BaJYwC7IExGZU038poAAD+62ojFHKgiXTefMA63tk/LGWhx6Yx2jHWqy3HxAm+ZIEABbP/oDhqPJmmeliRgAByPEbX84AA",
+    "alt": "Tharif & Zahraa — photograph 2",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "11.jpg",
+    "src": "/photos/tharif-zahraa/11.jpg",
+    "width": 1024,
+    "height": 1433,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoLABAAA4BaJaACdAEQNjXo2GjgAP7voO1bxRQaUoxX+4cw57VI2Be0BNklhXTuN5c7xsuLF18qbAw0KI7UC+FVe16fLQzTqbiRqRVKOKmMy3eSs/llD4nMwvfhkT/5YAA=",
+    "alt": "Tharif & Zahraa — photograph 11",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "06.jpg",
+    "src": "/photos/tharif-zahraa/06.jpg",
+    "width": 1024,
+    "height": 683,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJYwCdADwkfhjU4AA/uozy+DxztmxicCm4diBqY75u69YriZKEWzEy0FaB0yLSF9Freueo1lIq3FvSWX/H4SAlcX1pVjR1YvCmXeqYRzYAA==",
+    "alt": "Tharif & Zahraa — photograph 6",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   },
+   {
+    "file": "04.jpg",
+    "src": "/photos/tharif-zahraa/04.jpg",
+    "width": 1024,
+    "height": 1434,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoLABAAA4BaJYgCdAEDfpsoXsAR0AD+8U5Nw5ktGwsOiyjM3jbsJrAbVmL5HDn0R6EA0GDeXb9ooHIfkKt5Wk1YWJgBMd+Nyf6vgAAA",
+    "alt": "Tharif & Zahraa — photograph 4",
+    "album": "tharif-zahraa",
+    "albumTitle": "Tharif & Zahraa"
+   }
+  ]
+ }
+}

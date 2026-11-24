@@ -1,0 +1,19 @@
+{
+  "_help": "Pick the photos the homepage leads with. Each entry is \"album-folder/filename\". 'hero' is the slideshow at the top (portrait photos work best); 'selected' is the strip of favourite frames further down. Leave a list empty to fall back to each album's own featured photos.",
+  "hero": [
+    "tharif-zahraa/hero.jpg",
+    "tharif-zahraa/01.jpg",
+    "tharif-zahraa/09.jpg",
+    "tharif-zahraa/03.jpg"
+  ],
+  "selected": [
+    "tharif-zahraa/10.jpg",
+    "tharif-zahraa/07.jpg",
+    "tharif-zahraa/08.jpg",
+    "tharif-zahraa/05.jpg",
+    "tharif-zahraa/02.jpg",
+    "tharif-zahraa/11.jpg",
+    "tharif-zahraa/06.jpg",
+    "tharif-zahraa/04.jpg"
+  ]
+}

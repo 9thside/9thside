@@ -1,201 +1,127 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { motion, AnimatePresence, type Variants } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { navLinks, site } from '@/lib/site'
+import { EASE_EXPO } from '@/lib/motion'
+import { lockScroll } from '@/components/shared/SmoothScroll'
 import { cn } from '@/lib/utils'
-import { EASE_EXPO, EASE_IN, DURATION } from '@/lib/motion'
-import { LogoImage } from '@/components/ui/Logo'
-
-const navLinks = [
-  { href: '/work', label: 'Work' },
-  { href: '/services', label: 'Services' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-]
-
-const mobileMenuVariants: Variants = {
-  hidden: { opacity: 0, clipPath: 'inset(0 0 100% 0)' },
-  visible: {
-    opacity: 1,
-    clipPath: 'inset(0 0 0% 0)',
-    transition: { duration: 0.55, ease: EASE_EXPO },
-  },
-  exit: {
-    opacity: 0,
-    clipPath: 'inset(0 0 100% 0)',
-    transition: { duration: 0.45, ease: EASE_IN },
-  },
-}
-
-const mobileLinkVariants: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: DURATION.slow, ease: EASE_EXPO, delay: 0.1 + i * 0.07 },
-  }),
-}
 
 export function Nav() {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
+  const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 30)
-    handleScroll()
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
+    const onScroll = () => setScrolled(window.scrollY > 40)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  useEffect(() => {
-    document.body.style.overflow = menuOpen ? 'hidden' : ''
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [menuOpen])
+  // Pages that open on a dark, full-bleed photograph get a light nav until you scroll.
+  const overPhoto = pathname === '/' || pathname === '/weddings' || pathname.startsWith('/portfolio/')
+  const solid = scrolled && !open
+  const light = open || (overPhoto && !scrolled)
 
+  useEffect(() => setOpen(false), [pathname])
   useEffect(() => {
-    setMenuOpen(false)
-  }, [pathname])
+    lockScroll(open)
+    return () => lockScroll(false)
+  }, [open])
 
   return (
     <>
-      <motion.nav
+      <header
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
-          scrolled
-            ? 'border-b border-[var(--border)]'
-            : 'border-b border-transparent'
+          'fixed inset-x-0 top-0 z-50 border-b transition-[background-color,border-color,color] duration-500',
+          light ? 'text-cream' : 'text-ink',
+          solid ? 'border-ink/10 bg-paper/90 backdrop-blur-md' : 'border-transparent'
         )}
-        style={{
-          backgroundColor: scrolled ? 'rgba(8,8,8,0.94)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(20px)' : 'none',
-          WebkitBackdropFilter: scrolled ? 'blur(20px)' : 'none',
-        }}
-        initial={{ opacity: 0, y: -12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: DURATION.base, ease: EASE_EXPO, delay: 0.1 }}
       >
-        <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-[68px] flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="hover:opacity-80 transition-opacity duration-300 flex-shrink-0">
-            <LogoImage variant="full" color="white" width={52} />
+        <div className={cn('shell flex items-center justify-between transition-[height] duration-500', solid ? 'h-16 md:h-20' : 'h-20 md:h-24')}>
+          <Link href="/" aria-label="9thside — home" className="block">
+            <Image
+              src={light ? '/media/logo-white-full-trim.png' : '/media/logo-black-full-trim.png'}
+              alt="9thside"
+              width={900}
+              height={683}
+              priority
+              className="h-10 w-auto md:h-12"
+            />
           </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <nav className="hidden items-center gap-10 md:flex" aria-label="Main">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'font-body text-[11px] uppercase tracking-[0.18em] transition-colors duration-300',
-                  pathname === link.href || pathname.startsWith(link.href + '/')
-                    ? 'text-[var(--text-primary)]'
-                    : 'text-[rgba(240,237,232,0.7)] hover:text-[var(--text-primary)]'
+                  'eyebrow relative py-2 transition-opacity duration-300 hover:opacity-100',
+                  pathname.startsWith(link.href) ? 'opacity-100' : 'opacity-70'
                 )}
               >
                 {link.label}
+                {pathname.startsWith(link.href) && (
+                  <span className="absolute -bottom-0.5 left-0 h-px w-full bg-current" />
+                )}
               </Link>
             ))}
-          </div>
-
-          {/* CTA + Hamburger */}
-          <div className="flex items-center gap-4">
             <Link
               href="/contact"
-              className="hidden md:inline-flex items-center font-body text-[11px] uppercase tracking-[0.18em] border border-[var(--accent)] text-[var(--accent)] px-4 py-2 transition-all duration-300 hover:bg-[var(--accent-muted)]"
+              className={cn(
+                'eyebrow border px-5 py-3 transition-colors duration-300',
+                light ? 'border-cream/60 hover:bg-cream hover:text-ink' : 'border-ink/40 hover:bg-ink hover:text-paper'
+              )}
             >
-              Start a Project
+              Inquire
             </Link>
+          </nav>
 
-            {/* Hamburger */}
-            <button
-              className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px]"
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-            >
-              <motion.span
-                className="block w-6 h-[1.5px] bg-[var(--text-primary)] origin-center"
-                animate={menuOpen ? { rotate: 45, y: 6.5 } : { rotate: 0, y: 0 }}
-                transition={{ duration: 0.3, ease: EASE_EXPO }}
-              />
-              <motion.span
-                className="block w-6 h-[1.5px] bg-[var(--text-primary)] origin-center"
-                animate={menuOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
-                transition={{ duration: 0.2 }}
-              />
-              <motion.span
-                className="block w-6 h-[1.5px] bg-[var(--text-primary)] origin-center"
-                animate={menuOpen ? { rotate: -45, y: -6.5 } : { rotate: 0, y: 0 }}
-                transition={{ duration: 0.3, ease: EASE_EXPO }}
-              />
-            </button>
-          </div>
-        </div>
-      </motion.nav>
-
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            className="fixed inset-0 z-40 flex flex-col justify-between px-6 pt-24 pb-10"
-            style={{ backgroundColor: 'var(--bg)' }}
-            variants={mobileMenuVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            className="eyebrow -mr-2 p-2 md:hidden"
           >
-            {/* Mobile menu logo */}
-            <div className="absolute top-4 left-6">
-              <LogoImage variant="full" color="white" width={52} />
-            </div>
+            {open ? 'Close' : 'Menu'}
+          </button>
+        </div>
+      </header>
 
-            {/* Nav Links */}
-            <div className="flex flex-col gap-2">
-              {navLinks.map((link, i) => (
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            className="fixed inset-0 z-40 flex flex-col justify-between bg-night px-5 pb-10 pt-28 text-cream md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35 }}
+          >
+            <nav className="flex flex-col gap-1" aria-label="Mobile">
+              {[...navLinks, { href: '/contact', label: 'Inquire' }].map((link, i) => (
                 <motion.div
                   key={link.href}
-                  custom={i}
-                  variants={mobileLinkVariants}
-                  initial="hidden"
-                  animate="visible"
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: EASE_EXPO, delay: 0.05 + i * 0.06 }}
                 >
-                  <Link
-                    href={link.href}
-                    className={cn(
-                      'block font-display font-light text-[3rem] leading-[1.15] tracking-tight py-3 border-b border-[var(--border)] transition-colors duration-300',
-                      pathname === link.href
-                        ? 'text-[var(--text-primary)]'
-                        : 'text-[rgba(240,237,232,0.5)] hover:text-[var(--text-primary)]'
-                    )}
-                  >
+                  <Link href={link.href} className="display block py-2 text-[3.25rem]">
                     {link.label}
                   </Link>
                 </motion.div>
               ))}
+            </nav>
+            <div className="space-y-2 text-sm text-cream/55">
+              <a href={`mailto:${site.email}`} className="block text-cream">
+                {site.email}
+              </a>
+              <p>{site.location}</p>
             </div>
-
-            {/* Bottom CTA */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: DURATION.base, ease: EASE_EXPO, delay: 0.4 }}
-              className="flex flex-col gap-4"
-            >
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center font-body text-[11px] uppercase tracking-[0.18em] border border-[var(--accent)] text-[var(--accent)] px-6 py-3.5 w-full transition-all duration-300 hover:bg-[var(--accent-muted)]"
-              >
-                Start a Project
-              </Link>
-              <p className="font-body text-[11px] tracking-[0.1em] text-center" style={{ color: 'var(--text-secondary)' }}>
-                hello@9thside.com
-              </p>
-            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
