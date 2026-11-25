@@ -68,9 +68,9 @@ export function Nav() {
             ))}
             <Link
               href="/contact"
-              className="eyebrow rounded-full bg-accent px-5 py-3 font-semibold text-night transition-colors duration-300 hover:bg-cream"
+              className="eyebrow border border-cream/40 px-5 py-3 transition-colors duration-500 hover:border-cream hover:bg-cream hover:text-night"
             >
-              Inquire
+              Enquire
             </Link>
           </nav>
 
@@ -96,14 +96,14 @@ export function Nav() {
             transition={{ duration: 0.35 }}
           >
             <nav className="flex flex-col gap-1" aria-label="Mobile">
-              {[...navLinks, { href: '/contact', label: 'Inquire' }].map((link, i) => (
+              {[...navLinks, { href: '/contact', label: 'Enquire' }].map((link, i) => (
                 <motion.div
                   key={link.href}
                   initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: EASE_EXPO, delay: 0.05 + i * 0.06 }}
                 >
-                  <Link href={link.href} className="display block py-1 text-[4.75rem]">
+                  <Link href={link.href} className="display block py-2 text-[2.75rem]">
                     {link.label}
                   </Link>
                 </motion.div>

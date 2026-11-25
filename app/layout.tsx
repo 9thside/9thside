@@ -1,26 +1,18 @@
 import type { Metadata, Viewport } from 'next'
-import { Archivo, Instrument_Serif, Inter } from 'next/font/google'
+import { Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
 import { Nav } from '@/components/layout/Nav'
 import { Footer } from '@/components/layout/Footer'
 import { SmoothScroll } from '@/components/shared/SmoothScroll'
 import { Intro } from '@/components/shared/Intro'
-import { Cursor } from '@/components/shared/Cursor'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { site } from '@/lib/site'
 import { highlights } from '@/lib/albums'
 
-const poster = Archivo({
+const serif = Cormorant_Garamond({
   subsets: ['latin'],
-  axes: ['wdth'],
-  variable: '--font-poster',
-  display: 'swap',
-})
-
-const serif = Instrument_Serif({
-  subsets: ['latin'],
-  weight: '400',
+  weight: ['300', '400', '500'],
   style: ['normal', 'italic'],
   variable: '--font-serif',
   display: 'swap',
@@ -51,7 +43,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title, description: site.description },
 }
 
-export const viewport: Viewport = { themeColor: '#0b0b0c' }
+export const viewport: Viewport = { themeColor: '#0a0a0a' }
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -70,7 +62,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${poster.variable} ${serif.variable} ${body.variable}`}>
+    <html lang="en" className={`${serif.variable} ${body.variable}`}>
       <body>
         <Intro>
           <SmoothScroll>
@@ -79,7 +71,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
           </SmoothScroll>
         </Intro>
-        <Cursor />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Analytics />
         <SpeedInsights />

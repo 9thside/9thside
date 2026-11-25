@@ -47,7 +47,7 @@ export default async function AlbumPage({ params }: Props) {
         <div className="absolute inset-0 bg-gradient-to-t from-night via-night/25 to-night/55" />
         <div className="shell relative pb-14 pt-40 md:pb-20">
           <p className="eyebrow text-accent">{album.categoryLabel}</p>
-          <h1 className="display mt-4 text-[clamp(3.25rem,11vw,11.5rem)]">{album.title}</h1>
+          <h1 className="display mt-5 text-[clamp(2.25rem,6vw,5.5rem)] uppercase tracking-[0.06em]">{album.title}</h1>
         </div>
       </section>
 
@@ -83,7 +83,7 @@ export default async function AlbumPage({ params }: Props) {
           />
           <div className="shell relative py-32 text-center md:py-48">
             <p className="eyebrow text-cream/70">Next story</p>
-            <p className="display mt-5 text-[clamp(3.5rem,12vw,11rem)]">{next.title}</p>
+            <p className="display mt-5 text-[clamp(2.75rem,7vw,6.5rem)]">{next.title}</p>
           </div>
         </Link>
       )}

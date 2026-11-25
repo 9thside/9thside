@@ -1,12 +1,17 @@
 {
-  "_help": "Pick the photos the homepage leads with. Each entry is \"album-folder/filename\". 'hero' is the pile of prints at the top (the first one sits in the middle; use about six, mixing tall and wide); 'selected' is the scrolling reel of favourite frames further down. Leave a list empty to fall back to each album's own featured photos.",
+  "_help": "Pick what the homepage leads with. 'hero' is the framed slideshow at the top: tall (portrait) photos only, as \"album-folder/filename\". 'albums' is the three album folders shown under Selected commissions. 'selected' supplies supporting photos on the Weddings and About pages.",
   "hero": [
     "tharif-zahraa/18.jpg",
     "mohsin-rida/22.jpg",
     "nurah-hamaz/16.jpg",
-    "osama-hajra-waleema/36.jpg",
-    "shakir-umaima/29.jpg",
-    "haseenah-farahaz-portraits/29.jpg"
+    "hasnain-zeba/35.jpg",
+    "osama-hajra-nikkah/06.jpg",
+    "yunus-safiyyah/26.jpg"
+  ],
+  "albums": [
+    "tharif-zahraa",
+    "mohsin-rida",
+    "osama-hajra-nikkah"
   ],
   "selected": [
     "osama-hajra-nikkah/13.jpg",

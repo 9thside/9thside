@@ -21,7 +21,7 @@ export default function ServicesPage() {
         eyebrow="Services"
         title={
           <>
-            Point me at <em>anything.</em>
+            Commissions, <em>by appointment.</em>
           </>
         }
         intro="Weddings are the heart of the studio, but the approach travels: watch closely, light it well, and make people feel at ease."
@@ -38,12 +38,12 @@ export default function ServicesPage() {
               >
                 <p className="eyebrow text-ink/40">{String(i + 1).padStart(2, '0')}</p>
                 <div>
-                  <h2 className="display text-[clamp(3.25rem,7vw,7rem)]">{v.title}</h2>
+                  <h2 className="display text-[clamp(2.25rem,4.8vw,4.5rem)]">{v.title}</h2>
                   <p className="mt-4 font-display text-2xl font-light italic text-ink/60">{v.line}</p>
                   <p className="prose-body mt-8 max-w-lg text-ink/65">{v.body}</p>
                   <div className="mt-10 flex flex-wrap gap-4">
                     <Link href={`/contact?type=${encodeURIComponent(v.title)}`} className="btn-dark">
-                      Inquire
+                      Enquire
                     </Link>
                     {v.href && (
                       <Link href={v.href} className="btn-ghost-dark">

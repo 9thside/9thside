@@ -41,6 +41,7 @@ export const albumMeta = (album: Album) =>
 /** Categories that currently have at least one album, in display order. */
 export const albumCategories = () => {
   const seen = new Map<string, string>()
-  for (const a of albums) seen.set(a.category, a.categoryLabel)
+  const weddingsFirst = [...albums].sort((a, b) => Number(b.category === 'wedding') - Number(a.category === 'wedding'))
+  for (const a of weddingsFirst) seen.set(a.category, a.categoryLabel)
   return [...seen].map(([id, label]) => ({ id, label }))
 }

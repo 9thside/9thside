@@ -56,12 +56,12 @@ All fields are optional; sensible defaults are used when they are missing.
 
 ### Choosing the homepage highlights
 
-Edit `content/highlights.json`. Each entry is `"album-folder/filename"`:
+Edit `content/highlights.json`:
 
-- `hero` — the slideshow at the top of the homepage (portrait photos work best).
-- `selected` — the "Favourite frames" strip.
-
-The first album in the portfolio order is the homepage's "Featured story".
+- `hero` — the framed slideshow at the top of the homepage. Tall (portrait)
+  photos only, each written as `"album-folder/filename"`.
+- `albums` — the three album folders shown under "Selected commissions".
+- `selected` — supporting photos used on the Weddings and About pages.
 
 ## Where things live
 
