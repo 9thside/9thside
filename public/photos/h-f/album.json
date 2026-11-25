@@ -1,0 +1,18 @@
+{
+  "title": "H & F",
+  "category": "wedding",
+  "description": "Ivory and gold among stone arches and bare trees under grey skies, then vivid yellow and teal against ivy-covered walls.",
+  "cover": "14.jpg",
+  "hero": "13.jpg",
+  "featured": [
+    "02.jpg",
+    "04.jpg",
+    "09.jpg",
+    "13.jpg",
+    "14.jpg",
+    "17.jpg",
+    "21.jpg",
+    "23.jpg"
+  ],
+  "order": 10
+}

@@ -1,0 +1,18 @@
+{
+  "title": "N & H",
+  "category": "wedding",
+  "description": "Deep red and black velvet against garden greens, a vine-covered pergola and a rocky waterfall in soft overcast light.",
+  "cover": "09.jpg",
+  "hero": "10.jpg",
+  "featured": [
+    "02.jpg",
+    "03.jpg",
+    "04.jpg",
+    "05.jpg",
+    "09.jpg",
+    "10.jpg",
+    "14.jpg",
+    "16.jpg"
+  ],
+  "order": 6
+}

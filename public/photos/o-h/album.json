@@ -1,0 +1,18 @@
+{
+  "title": "O & H",
+  "category": "wedding",
+  "description": "Bright lakeside sand, a tulip-ringed gazebo and a farm with a red barn and old tree swing, sunny and playful.",
+  "cover": "15.jpg",
+  "hero": "20.jpg",
+  "featured": [
+    "03.jpg",
+    "08.jpg",
+    "09.jpg",
+    "11.jpg",
+    "15.jpg",
+    "16.jpg",
+    "20.jpg",
+    "24.jpg"
+  ],
+  "order": 4
+}
