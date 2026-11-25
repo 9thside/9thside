@@ -1,7 +1,7 @@
 // Turns a folder of full-size photos (e.g. a Pixieset "Download all" export)
 // into a web-ready album.
 //
-//   npm run album -- "~/Downloads/Sara & Omar" --title "Sara & Omar" --category wedding --location "Toronto"
+//   npm run album -- "~/Downloads/Sara & Omar" --title "S & O" --category wedding
 //
 // Photos are resized to 2400px on the long edge and written to
 // public/photos/<slug>/ alongside an album.json you can edit afterwards.
@@ -19,14 +19,13 @@ const { values, positionals } = parseArgs({
     title: { type: 'string' },
     category: { type: 'string', default: 'wedding' },
     location: { type: 'string', default: '' },
-    date: { type: 'string', default: '' },
     slug: { type: 'string' },
     size: { type: 'string', default: '2400' },
   },
 })
 
 if (!positionals[0]) {
-  console.error('Usage: npm run album -- <folder of photos> [--title "Name"] [--category wedding|couples|portrait|event|commercial|real-estate] [--location "City"] [--date YYYY-MM-DD]')
+  console.error('Usage: npm run album -- <folder of photos> [--title "Name"] [--category wedding|couples|portrait|event|commercial|real-estate] [--location "City"]')
   process.exit(1)
 }
 
@@ -69,7 +68,7 @@ for (const [i, file] of files.entries()) {
 }
 
 if (!exists) {
-  const meta = { title, category: values.category, location: values.location, date: values.date, description: '', cover: '', hero: '', featured: [] }
+  const meta = { title, category: values.category, location: values.location, description: '', cover: '', hero: '', featured: [] }
   await writeFile(path.join(dest, 'album.json'), JSON.stringify(meta, null, 2) + '\n')
 }
 console.log(`\nAlbum ready: public/photos/${slug}/ -> /portfolio/${slug}`)

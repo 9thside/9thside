@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { type Album, albumYear } from '@/lib/albums'
+import type { Album } from '@/lib/albums'
 import { Photo } from '@/components/shared/Photo'
 import { cn } from '@/lib/utils'
 
@@ -24,7 +24,6 @@ export function AlbumCard({ album, sizes, tall, className }: AlbumCardProps) {
       </div>
       <div className="mt-5 flex items-baseline justify-between gap-6">
         <h3 className="font-display text-2xl font-light uppercase tracking-[0.1em] transition-colors duration-500 group-hover:text-accent md:text-[1.7rem]">{album.title}</h3>
-        <span className="eyebrow shrink-0 text-ink/45">{albumYear(album)}</span>
       </div>
       <p className="eyebrow mt-2 text-ink/45">
         {[album.categoryLabel, album.location].filter(Boolean).join('  ·  ')}

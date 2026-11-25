@@ -20,7 +20,6 @@ export interface Album {
   category: string
   categoryLabel: string
   location: string
-  date: string
   description: string
   cover: Photo
   hero: Photo
@@ -40,11 +39,6 @@ export const findPhoto = (ref: string): HighlightPhoto | undefined => {
 }
 
 export const getAlbum = (slug: string) => albums.find((a) => a.slug === slug)
-
-export const albumYear = (album: Album) => album.date.slice(0, 4)
-
-export const albumMeta = (album: Album) =>
-  [album.categoryLabel, album.location, albumYear(album)].filter(Boolean).join('  ·  ')
 
 /** Categories that currently have at least one album, in display order. */
 export const albumCategories = () => {

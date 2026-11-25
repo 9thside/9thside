@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { albums, findPhoto, getAlbum, highlights, albumYear } from '@/lib/albums'
+import { albums, findPhoto, getAlbum, highlights } from '@/lib/albums'
 import { site, verticals } from '@/lib/site'
 import picks from '@/content/highlights.json'
 import { HeroBackdrop } from '@/components/home/HeroBackdrop'
@@ -13,9 +13,9 @@ export default function HomePage() {
   const resolve = (refs: string[] = []) => refs.map(findPhoto).filter((p) => p !== undefined)
   const tall = highlights.hero.filter((p) => p.height > p.width)
   const wide = resolve(picks.heroWide)
-  // Three albums chosen in content/highlights.json; falls back to the newest weddings.
+  // Three albums chosen in content/highlights.json; falls back to the first three in portfolio order.
   const chosen = (picks.albums ?? []).map(getAlbum).filter((a) => a !== undefined)
-  const featured = (chosen.length ? chosen : albums.filter((a) => a.category === 'wedding')).slice(0, 3)
+  const featured = (chosen.length ? chosen : albums).slice(0, 3)
 
   return (
     <>
@@ -84,7 +84,7 @@ export default function HomePage() {
                   {album.title}
                 </h3>
                 <p className="eyebrow mt-2 text-ink/45">
-                  {[album.categoryLabel, albumYear(album)].filter(Boolean).join('  ·  ')}
+                  {album.categoryLabel}
                 </p>
               </Link>
             </Reveal>
