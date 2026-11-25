@@ -31,6 +31,14 @@ export interface Album {
 export const albums = data.albums as Album[]
 export const highlights = data.highlights as { hero: HighlightPhoto[]; selected: HighlightPhoto[] }
 
+/** Looks up a photo by its "album-folder/filename" reference. */
+export const findPhoto = (ref: string): HighlightPhoto | undefined => {
+  const [slug, file] = ref.split('/')
+  const album = albums.find((a) => a.slug === slug)
+  const photo = album?.photos.find((p) => p.file === file)
+  return album && photo ? { ...photo, album: album.slug, albumTitle: album.title } : undefined
+}
+
 export const getAlbum = (slug: string) => albums.find((a) => a.slug === slug)
 
 export const albumYear = (album: Album) => album.date.slice(0, 4)

@@ -16,7 +16,7 @@ export function Footer() {
       <div className="rule" />
       <div className="shell flex flex-col items-center gap-10 py-16 text-center">
         <Link href="/" aria-label="9thside — home">
-          <Image src="/media/logo-white-full-trim.png" alt="9thside" width={900} height={683} className="h-14 w-auto" />
+          <Image src="/media/logo-black-full-trim.png" alt="9thside" width={900} height={683} className="h-14 w-auto" />
         </Link>
         <ul className="flex flex-wrap justify-center gap-x-9 gap-y-4">
           {links.map((l) => (

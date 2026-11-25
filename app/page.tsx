@@ -1,16 +1,18 @@
 import Link from 'next/link'
-import { albums, getAlbum, highlights, albumYear } from '@/lib/albums'
+import { albums, findPhoto, getAlbum, highlights, albumYear } from '@/lib/albums'
 import { site, verticals } from '@/lib/site'
 import picks from '@/content/highlights.json'
-import { HeroFrame } from '@/components/home/HeroFrame'
+import { HeroBackdrop } from '@/components/home/HeroBackdrop'
 import { HeroFade, HeroTitle } from '@/components/home/HeroTitle'
 import { Photo } from '@/components/shared/Photo'
 import { Reveal } from '@/components/shared/Reveal'
 import { InquiryBand } from '@/components/shared/InquiryBand'
 
 export default function HomePage() {
-  // The hero frame is tall, so it only takes portrait photographs.
-  const slides = highlights.hero.filter((p) => p.height > p.width)
+  // Wide photographs fill the screen on computers, tall ones on phones.
+  const resolve = (refs: string[] = []) => refs.map(findPhoto).filter((p) => p !== undefined)
+  const tall = highlights.hero.filter((p) => p.height > p.width)
+  const wide = resolve(picks.heroWide)
   // Three albums chosen in content/highlights.json; falls back to the newest weddings.
   const chosen = (picks.albums ?? []).map(getAlbum).filter((a) => a !== undefined)
   const featured = (chosen.length ? chosen : albums.filter((a) => a.category === 'wedding')).slice(0, 3)
@@ -18,20 +20,22 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="shell grid items-center gap-12 pb-16 pt-32 lg:min-h-[100svh] lg:grid-cols-[1fr_minmax(0,34rem)] lg:gap-20 lg:pb-12 lg:pt-28">
-        <div>
+      <section className="relative flex min-h-[100svh] items-end overflow-hidden bg-night text-cream">
+        <HeroBackdrop wide={wide} tall={tall} />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/25" />
+        <div className="shell relative pb-10 pt-40 md:pb-16">
           <HeroFade delay={0.1}>
-            <p className="eyebrow text-accent">{site.tagline}</p>
+            <p className="eyebrow text-cream/85">{site.tagline}</p>
           </HeroFade>
           <HeroTitle
-            className="display mt-6 text-[clamp(3.25rem,8vw,7.5rem)]"
-            lines={['Once,', <em key="b">beautifully.</em>]}
+            className="display mt-4 text-[clamp(2.6rem,6.2vw,5.75rem)]"
+            lines={[<>Once, <em>beautifully.</em></>]}
           />
           <HeroFade delay={0.5}>
-            <p className="prose-body mt-7 max-w-sm text-ink/60">
-              Wedding and portrait photography by {site.founder}. {site.location}, by appointment.
+            <p className="prose-body mt-4 hidden max-w-lg text-cream/85 md:block">
+              Photography by {site.founder}. {site.location}, by appointment.
             </p>
-            <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-5">
+            <div className="mt-6 flex flex-wrap items-center gap-x-7 gap-y-4 md:mt-8">
               <Link href="/contact" className="btn-light">
                 Enquire
               </Link>
@@ -41,9 +45,6 @@ export default function HomePage() {
             </div>
           </HeroFade>
         </div>
-        <HeroFade delay={0.2}>
-          <HeroFrame slides={slides.length ? slides : highlights.hero} />
-        </HeroFade>
       </section>
 
       {/* Statement */}

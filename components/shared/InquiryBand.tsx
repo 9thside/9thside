@@ -28,7 +28,7 @@ export function InquiryBand({
             A limited number of commissions are accepted each season. Every enquiry receives a personal reply.
           </p>
           <div className="mt-10 flex flex-col items-center gap-6">
-            <Link href={href} className="btn-light">
+            <Link href={href} className="btn-dark">
               Enquire
             </Link>
             <a href={`mailto:${site.email}`} className="text-sm text-ink/55 transition-colors duration-500 hover:text-accent">

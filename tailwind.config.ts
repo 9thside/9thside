@@ -1,18 +1,19 @@
 import type { Config } from 'tailwindcss'
 
-// Quiet, dark palette. "paper" is the page background and "ink" the text
+// Light, gallery-white palette. "night" and "cream" are the fixed dark and light
+// used on top of photographs. "paper" is the page background and "ink" the text
 // colour, so swapping these two values re-themes the whole site.
 const config: Config = {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './lib/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        paper: '#0a0a0a',
-        'paper-deep': '#111110',
-        ink: '#ede8df',
-        night: '#0a0a0a',
-        cream: '#ede8df',
-        accent: '#c2a878',
+        paper: '#fbfaf8',
+        'paper-deep': '#f2efe9',
+        ink: '#151515',
+        night: '#101010',
+        cream: '#fbfaf8',
+        accent: '#8c7350',
       },
       fontFamily: {
         display: ['var(--font-serif)', 'Georgia', 'serif'],

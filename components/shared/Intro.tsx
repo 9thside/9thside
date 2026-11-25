@@ -33,12 +33,12 @@ export function Intro({ children }: { children: React.ReactNode }) {
       <AnimatePresence>
         {!done && (
           <motion.div
-            className="fixed inset-0 z-[200] flex items-center justify-center bg-night"
+            className="fixed inset-0 z-[200] flex items-center justify-center bg-paper"
             exit={{ opacity: 0 }}
             transition={{ duration: 0.9, ease: 'easeInOut' }}
           >
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
-              <Image src="/media/logo-white-full-trim.png" alt="9thside" width={900} height={683} priority className="h-16 w-auto" />
+              <Image src="/media/logo-black-full-trim.png" alt="9thside" width={900} height={683} priority className="h-16 w-auto" />
             </motion.div>
           </motion.div>
         )}

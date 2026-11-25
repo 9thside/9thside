@@ -58,8 +58,9 @@ All fields are optional; sensible defaults are used when they are missing.
 
 Edit `content/highlights.json`:
 
-- `hero` — the framed slideshow at the top of the homepage. Tall (portrait)
-  photos only, each written as `"album-folder/filename"`.
+- `heroWide` — the full-screen slideshow at the top of the homepage on
+  computers. Wide photos, each written as `"album-folder/filename"`.
+- `hero` — the same slideshow on phones. Tall (portrait) photos only.
 - `albums` — the three album folders shown under "Selected commissions".
 - `selected` — supporting photos used on the Weddings and About pages.
 

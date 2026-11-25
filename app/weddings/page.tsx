@@ -59,7 +59,7 @@ export default function WeddingsPage() {
     <>
       <section className="relative min-h-[100svh] overflow-hidden bg-night text-cream">
         {lead && <Photo photo={lead} fill priority quality={85} sizes="100vw" className="kenburns object-[50%_35%]" />}
-        <div className="absolute inset-0 bg-gradient-to-t from-night via-night/30 to-night/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-black/35" />
         <div className="shell relative flex min-h-[100svh] flex-col justify-end pb-16 pt-40 md:pb-24">
           <p className="eyebrow text-cream/70">Weddings</p>
           <h1 className="display mt-6 max-w-6xl text-[clamp(2.75rem,7vw,6.5rem)]">

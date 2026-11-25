@@ -1,5 +1,12 @@
 {
-  "_help": "Pick what the homepage leads with. 'hero' is the framed slideshow at the top: tall (portrait) photos only, as \"album-folder/filename\". 'albums' is the three album folders shown under Selected commissions. 'selected' supplies supporting photos on the Weddings and About pages.",
+  "_help": "Pick what the homepage leads with, each photo written as \"album-folder/filename\". 'heroWide' is the full-screen slideshow on computers (wide photos); 'hero' is the same slideshow on phones (tall photos). 'albums' is the three album folders shown under Selected commissions. 'selected' supplies supporting photos on the Weddings and About pages.",
+  "heroWide": [
+    "mohsin-rida/41.jpg",
+    "osama-hajra-nikkah/13.jpg",
+    "tharif-zahraa/22.jpg",
+    "haseenah-farahaz-portraits/29.jpg",
+    "osama-hajra-waleema/36.jpg"
+  ],
   "hero": [
     "tharif-zahraa/18.jpg",
     "mohsin-rida/22.jpg",

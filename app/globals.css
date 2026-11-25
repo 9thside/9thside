@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --paper: #0a0a0a;
-  --ink: #ede8df;
-  --accent: #c2a878;
+  --paper: #fbfaf8;
+  --ink: #151515;
+  --accent: #8c7350;
 }
 
 html {
@@ -24,21 +24,13 @@ body {
 }
 
 ::selection {
-  background: var(--accent);
-  color: #0a0a0a;
+  background: var(--ink);
+  color: var(--paper);
 }
 
 :focus-visible {
   outline: 1px solid var(--accent);
   outline-offset: 4px;
-}
-
-option {
-  color: #0a0a0a;
-}
-
-input[type='date'] {
-  color-scheme: dark;
 }
 
 @layer components {
@@ -56,7 +48,7 @@ input[type='date'] {
     @apply font-display font-light leading-[1.02] tracking-[-0.01em];
   }
   .display em {
-    @apply italic text-accent;
+    @apply italic;
   }
 
   /* Longer editorial statements */
@@ -76,7 +68,7 @@ input[type='date'] {
   }
   .link-line::after {
     content: '';
-    @apply absolute bottom-0 left-0 h-px w-full origin-left bg-accent transition-transform duration-700 ease-expo;
+    @apply absolute bottom-0 left-0 h-px w-full origin-left bg-current transition-transform duration-700 ease-expo;
   }
   .link-line:hover::after {
     transform: scaleX(0.4);
@@ -85,20 +77,25 @@ input[type='date'] {
   .btn {
     @apply inline-flex items-center justify-center border px-8 py-4 font-body text-[10px] font-normal uppercase tracking-[0.32em] transition-colors duration-500;
   }
-  .btn-light,
+  /* -dark buttons sit on the page; -light buttons sit on top of photographs */
   .btn-dark {
+    @apply btn border-ink bg-ink text-paper hover:bg-transparent hover:text-ink;
+  }
+  .btn-ghost-dark {
+    @apply btn border-ink/25 text-ink hover:border-ink;
+  }
+  .btn-light {
     @apply btn border-cream bg-cream text-night hover:bg-transparent hover:text-cream;
   }
-  .btn-ghost-light,
-  .btn-ghost-dark {
-    @apply btn border-cream/30 text-cream hover:border-cream;
+  .btn-ghost-light {
+    @apply btn border-cream/50 text-cream hover:border-cream;
   }
 }
 
 /* A fine hairline used to separate sections */
 .rule {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(237, 232, 223, 0.22), transparent);
+  background: linear-gradient(90deg, transparent, rgba(21, 21, 21, 0.16), transparent);
 }
 
 .no-scrollbar {

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title, description: site.description },
 }
 
-export const viewport: Viewport = { themeColor: '#0a0a0a' }
+export const viewport: Viewport = { themeColor: '#fbfaf8' }
 
 const jsonLd = {
   '@context': 'https://schema.org',

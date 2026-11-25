@@ -44,7 +44,7 @@ export default async function AlbumPage({ params }: Props) {
     <>
       <section className="relative flex min-h-[92svh] items-end overflow-hidden bg-night text-cream">
         <Photo photo={album.cover} fill priority quality={85} sizes="100vw" className="kenburns" />
-        <div className="absolute inset-0 bg-gradient-to-t from-night via-night/25 to-night/55" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-black/35" />
         <div className="shell relative pb-14 pt-40 md:pb-20">
           <p className="eyebrow text-accent">{album.categoryLabel}</p>
           <h1 className="display mt-5 text-[clamp(2.25rem,6vw,5.5rem)] uppercase tracking-[0.06em]">{album.title}</h1>
