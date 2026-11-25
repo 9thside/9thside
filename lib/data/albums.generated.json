@@ -9,22 +9,30 @@
    "description": "Sunlit park greens, a stone mansion with formal gardens and a long reflecting pool, then bold red against pale limestone.",
    "order": 1,
    "cover": {
-    "file": "08.jpg",
-    "src": "/photos/m-r/08.jpg",
-    "width": 1024,
-    "height": 683,
-    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAsAA4BaJZQC7AYstoBRJNM709AA/cMS7VdUVymrrG3muw/MLJmJySvXQ68h666CuTxoJR+5VqMNvTmitV8zpV0ueasMlMTuU2cn5pYhEX84mAJizO4Brfd12zTWAAA=",
-    "alt": "M & R — photograph 8"
+    "file": "30.jpg",
+    "src": "/photos/m-r/30.jpg",
+    "width": 2600,
+    "height": 1733,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsAA4BaJYwAD49pDCiCmAAA+SS6MghhC6CJSBEQyt/EGJOYP5ph6d5H/jNuEQynFcZk6etZ0nm3N6BKbrv97XUOCVDzM4L3VLOWnE03HOo2bUfKG8YAAAA=",
+    "alt": "M & R — photograph 30"
    },
    "hero": {
     "file": "15.jpg",
     "src": "/photos/m-r/15.jpg",
-    "width": 1024,
-    "height": 1280,
-    "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwAgCdASoNABAAA4BaJagC7AYvNyTKpzl2IIDAAP7rsRLUPoyryUXbCz2dx18iGKhg9zBGvt2qgdpVIZkIHLh6cUnhR5yv1Fm32IyX7H6ZJcovjZ3DSDzZ3Ie81KVRt9FCLTwJuF8PK5fwcD9PjxpPFxr3J2AA",
+    "width": 2080,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwAgCdASoNABAAA4BaJaAC7AYvhDq61v/FAAD+67zS6sEhxPNRjvGN0oN0q0XiSKny+5gjXtdaGN6aOy1X3x5uCnDe2KCKzzkCGhNSidNvLamak6cwdaOwyql8gZagFFq0puuW/uopXA5dkbaPPctT31FLGEgA",
     "alt": "M & R — photograph 15"
    },
    "featured": [
+    {
+     "file": "30.jpg",
+     "src": "/photos/m-r/30.jpg",
+     "width": 2600,
+     "height": 1733,
+     "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsAA4BaJYwAD49pDCiCmAAA+SS6MghhC6CJSBEQyt/EGJOYP5ph6d5H/jNuEQynFcZk6etZ0nm3N6BKbrv97XUOCVDzM4L3VLOWnE03HOo2bUfKG8YAAAA=",
+     "alt": "M & R — photograph 30"
+    },
     {
      "file": "02.jpg",
      "src": "/photos/m-r/02.jpg",
@@ -60,9 +68,9 @@
     {
      "file": "15.jpg",
      "src": "/photos/m-r/15.jpg",
-     "width": 1024,
-     "height": 1280,
-     "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwAgCdASoNABAAA4BaJagC7AYvNyTKpzl2IIDAAP7rsRLUPoyryUXbCz2dx18iGKhg9zBGvt2qgdpVIZkIHLh6cUnhR5yv1Fm32IyX7H6ZJcovjZ3DSDzZ3Ie81KVRt9FCLTwJuF8PK5fwcD9PjxpPFxr3J2AA",
+     "width": 2080,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwAgCdASoNABAAA4BaJaAC7AYvhDq61v/FAAD+67zS6sEhxPNRjvGN0oN0q0XiSKny+5gjXtdaGN6aOy1X3x5uCnDe2KCKzzkCGhNSidNvLamak6cwdaOwyql8gZagFFq0puuW/uopXA5dkbaPPctT31FLGEgA",
      "alt": "M & R — photograph 15"
     },
     {
@@ -206,9 +214,9 @@
     {
      "file": "15.jpg",
      "src": "/photos/m-r/15.jpg",
-     "width": 1024,
-     "height": 1280,
-     "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwAgCdASoNABAAA4BaJagC7AYvNyTKpzl2IIDAAP7rsRLUPoyryUXbCz2dx18iGKhg9zBGvt2qgdpVIZkIHLh6cUnhR5yv1Fm32IyX7H6ZJcovjZ3DSDzZ3Ie81KVRt9FCLTwJuF8PK5fwcD9PjxpPFxr3J2AA",
+     "width": 2080,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwAgCdASoNABAAA4BaJaAC7AYvhDq61v/FAAD+67zS6sEhxPNRjvGN0oN0q0XiSKny+5gjXtdaGN6aOy1X3x5uCnDe2KCKzzkCGhNSidNvLamak6cwdaOwyql8gZagFFq0puuW/uopXA5dkbaPPctT31FLGEgA",
      "alt": "M & R — photograph 15"
     },
     {
@@ -314,6 +322,22 @@
      "height": 1280,
      "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoNABAAA4BaJQBdgMWM3E93fi4yWAAA/vc+mhG/sagvVsmsHu4C+4ZUa2CsuOzGppcp44gPeAV8NaNBir24PLy9eeAKvkJ3/W+POn28EOfq3iV4edffSLSEpM+AAA==",
      "alt": "M & R — photograph 28"
+    },
+    {
+     "file": "29.jpg",
+     "src": "/photos/m-r/29.jpg",
+     "width": 1858,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoLABAAA4BaJYwCdAEXtUFkKhSAAPyO4t/LDIEUhCPcZvqvV0LXx7zUzYxCrmXR31bz0Cq1hEqxfh2u6XKHyZZUylFe7GI6QfYLkVglwp4k7HzbcUFBhwgA",
+     "alt": "M & R — photograph 29"
+    },
+    {
+     "file": "30.jpg",
+     "src": "/photos/m-r/30.jpg",
+     "width": 2600,
+     "height": 1733,
+     "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsAA4BaJYwAD49pDCiCmAAA+SS6MghhC6CJSBEQyt/EGJOYP5ph6d5H/jNuEQynFcZk6etZ0nm3N6BKbrv97XUOCVDzM4L3VLOWnE03HOo2bUfKG8YAAAA=",
+     "alt": "M & R — photograph 30"
     }
    ]
   },
@@ -328,17 +352,17 @@
    "cover": {
     "file": "13.jpg",
     "src": "/photos/t-z/13.jpg",
-    "width": 1024,
-    "height": 683,
-    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJYwC7AEPS/OjDcPQAP6atkS6SeV0I6vUUCD58mFGBrY4opirn0d594b8fIfPCBInHV9YEd9t8LepUfdyxaeYatHtbiy4HEord7w2CsSig/jPAAA=",
+    "width": 2600,
+    "height": 1733,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAsAA4BaJYwC7AEQN+C0/6AAAP6atkS6SeVrQuiR9nVDs1x6EBmF5P2TjGg4u3kETdAoatVZxUWJn8Yfmff2oJy7rs0tHXJ2EAqOsF0J3ZVkys+XNAAA",
     "alt": "T & Z — photograph 13"
    },
    "hero": {
     "file": "22.jpg",
     "src": "/photos/t-z/22.jpg",
-    "width": 1024,
-    "height": 1280,
-    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbX3tY3wAA/uFNrjMv8miMVrHON+cVquFrgttrt9634S2V54sVULSIn151W+HNR0X9rjF5+/NNkRIFuQYewoDqa8nwTWBfeh2vC3biXqVaKQ5Sub0AAA==",
+    "width": 2080,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbQGxuXQAA/uF0YSP2wvkBAIwqta96wTpVXoSwmEZfRCT7HF/a6dOU3XCDA358NqK9meL5WyMQVkvtvJjslAdTY5Do/bY7soGtPzTNel7p7+8LLRYAAA==",
     "alt": "T & Z — photograph 22"
    },
    "featured": [
@@ -377,9 +401,9 @@
     {
      "file": "13.jpg",
      "src": "/photos/t-z/13.jpg",
-     "width": 1024,
-     "height": 683,
-     "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJYwC7AEPS/OjDcPQAP6atkS6SeV0I6vUUCD58mFGBrY4opirn0d594b8fIfPCBInHV9YEd9t8LepUfdyxaeYatHtbiy4HEord7w2CsSig/jPAAA=",
+     "width": 2600,
+     "height": 1733,
+     "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAsAA4BaJYwC7AEQN+C0/6AAAP6atkS6SeVrQuiR9nVDs1x6EBmF5P2TjGg4u3kETdAoatVZxUWJn8Yfmff2oJy7rs0tHXJ2EAqOsF0J3ZVkys+XNAAA",
      "alt": "T & Z — photograph 13"
     },
     {
@@ -393,9 +417,9 @@
     {
      "file": "22.jpg",
      "src": "/photos/t-z/22.jpg",
-     "width": 1024,
-     "height": 1280,
-     "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbX3tY3wAA/uFNrjMv8miMVrHON+cVquFrgttrt9634S2V54sVULSIn151W+HNR0X9rjF5+/NNkRIFuQYewoDqa8nwTWBfeh2vC3biXqVaKQ5Sub0AAA==",
+     "width": 2080,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbQGxuXQAA/uF0YSP2wvkBAIwqta96wTpVXoSwmEZfRCT7HF/a6dOU3XCDA358NqK9meL5WyMQVkvtvJjslAdTY5Do/bY7soGtPzTNel7p7+8LLRYAAA==",
      "alt": "T & Z — photograph 22"
     },
     {
@@ -507,9 +531,9 @@
     {
      "file": "13.jpg",
      "src": "/photos/t-z/13.jpg",
-     "width": 1024,
-     "height": 683,
-     "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJYwC7AEPS/OjDcPQAP6atkS6SeV0I6vUUCD58mFGBrY4opirn0d594b8fIfPCBInHV9YEd9t8LepUfdyxaeYatHtbiy4HEord7w2CsSig/jPAAA=",
+     "width": 2600,
+     "height": 1733,
+     "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAsAA4BaJYwC7AEQN+C0/6AAAP6atkS6SeVrQuiR9nVDs1x6EBmF5P2TjGg4u3kETdAoatVZxUWJn8Yfmff2oJy7rs0tHXJ2EAqOsF0J3ZVkys+XNAAA",
      "alt": "T & Z — photograph 13"
     },
     {
@@ -579,9 +603,9 @@
     {
      "file": "22.jpg",
      "src": "/photos/t-z/22.jpg",
-     "width": 1024,
-     "height": 1280,
-     "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbX3tY3wAA/uFNrjMv8miMVrHON+cVquFrgttrt9634S2V54sVULSIn151W+HNR0X9rjF5+/NNkRIFuQYewoDqa8nwTWBfeh2vC3biXqVaKQ5Sub0AAA==",
+     "width": 2080,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbQGxuXQAA/uF0YSP2wvkBAIwqta96wTpVXoSwmEZfRCT7HF/a6dOU3XCDA358NqK9meL5WyMQVkvtvJjslAdTY5Do/bY7soGtPzTNel7p7+8LLRYAAA==",
      "alt": "T & Z — photograph 22"
     },
     {
@@ -922,17 +946,17 @@
    "cover": {
     "file": "15.jpg",
     "src": "/photos/o-h/15.jpg",
-    "width": 1024,
-    "height": 819,
-    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQAgCdASoQAA0AA4BaJbACdAYwxUKHurwfkYAA/OUQGonQxfeEp+btgsgerMttwvDOvo4hd4YlXIjyQ2iyYQPpWOWsz1mZf8z57/5bG7KJq0mx15hvHvUtGR3DOxvXJ6R7/9io4eRKtf3Enzi8N15F82oydpJ+hQp4AA==",
+    "width": 2600,
+    "height": 2080,
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQAgCdASoQAA0AA4BaJbACdADL+nDIvZUgAPzlEBxLbDrQrgTMoWsWQPRe0xuBG0zs2wzcixcMA1s90ZS10tKJrU1unKtg7lh47jdnB+Xe1jm9XmGu85FksLV0j6c8EOGf9io4eRKtf3Enzi8N15F82oydpJ+hQp4AAA==",
     "alt": "O & H — photograph 15"
    },
    "hero": {
     "file": "20.jpg",
     "src": "/photos/o-h/20.jpg",
-    "width": 1024,
-    "height": 1434,
-    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoLABAAA4BaJYwBTAFvr22bhc2y8sIAAP73ENcMc5xdLZ77qJNNcmEQ+D3sTx2yFeWQpLj65IB4xakDesJZAEc9bufJ1PN0TZiL5W6m+lZDQly4PAA=",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoLABAAA4BaJYwBTAFvm2KwRTqAAP73ENcPbUnmEDP8Bbjfr3FeWQk+4OS/7CbSUknvRDHpvvaLtts357/1LlU6Bd4c2Uv5DubJyTzoZCXX2MKXLg8AAA==",
     "alt": "O & H — photograph 20"
    },
    "featured": [
@@ -971,9 +995,9 @@
     {
      "file": "15.jpg",
      "src": "/photos/o-h/15.jpg",
-     "width": 1024,
-     "height": 819,
-     "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQAgCdASoQAA0AA4BaJbACdAYwxUKHurwfkYAA/OUQGonQxfeEp+btgsgerMttwvDOvo4hd4YlXIjyQ2iyYQPpWOWsz1mZf8z57/5bG7KJq0mx15hvHvUtGR3DOxvXJ6R7/9io4eRKtf3Enzi8N15F82oydpJ+hQp4AA==",
+     "width": 2600,
+     "height": 2080,
+     "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQAgCdASoQAA0AA4BaJbACdADL+nDIvZUgAPzlEBxLbDrQrgTMoWsWQPRe0xuBG0zs2wzcixcMA1s90ZS10tKJrU1unKtg7lh47jdnB+Xe1jm9XmGu85FksLV0j6c8EOGf9io4eRKtf3Enzi8N15F82oydpJ+hQp4AAA==",
      "alt": "O & H — photograph 15"
     },
     {
@@ -987,9 +1011,9 @@
     {
      "file": "20.jpg",
      "src": "/photos/o-h/20.jpg",
-     "width": 1024,
-     "height": 1434,
-     "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoLABAAA4BaJYwBTAFvr22bhc2y8sIAAP73ENcMc5xdLZ77qJNNcmEQ+D3sTx2yFeWQpLj65IB4xakDesJZAEc9bufJ1PN0TZiL5W6m+lZDQly4PAA=",
+     "width": 1857,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoLABAAA4BaJYwBTAFvm2KwRTqAAP73ENcPbUnmEDP8Bbjfr3FeWQk+4OS/7CbSUknvRDHpvvaLtts357/1LlU6Bd4c2Uv5DubJyTzoZCXX2MKXLg8AAA==",
      "alt": "O & H — photograph 20"
     },
     {
@@ -1117,9 +1141,9 @@
     {
      "file": "15.jpg",
      "src": "/photos/o-h/15.jpg",
-     "width": 1024,
-     "height": 819,
-     "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQAgCdASoQAA0AA4BaJbACdAYwxUKHurwfkYAA/OUQGonQxfeEp+btgsgerMttwvDOvo4hd4YlXIjyQ2iyYQPpWOWsz1mZf8z57/5bG7KJq0mx15hvHvUtGR3DOxvXJ6R7/9io4eRKtf3Enzi8N15F82oydpJ+hQp4AA==",
+     "width": 2600,
+     "height": 2080,
+     "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQAgCdASoQAA0AA4BaJbACdADL+nDIvZUgAPzlEBxLbDrQrgTMoWsWQPRe0xuBG0zs2wzcixcMA1s90ZS10tKJrU1unKtg7lh47jdnB+Xe1jm9XmGu85FksLV0j6c8EOGf9io4eRKtf3Enzi8N15F82oydpJ+hQp4AAA==",
      "alt": "O & H — photograph 15"
     },
     {
@@ -1157,9 +1181,9 @@
     {
      "file": "20.jpg",
      "src": "/photos/o-h/20.jpg",
-     "width": 1024,
-     "height": 1434,
-     "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoLABAAA4BaJYwBTAFvr22bhc2y8sIAAP73ENcMc5xdLZ77qJNNcmEQ+D3sTx2yFeWQpLj65IB4xakDesJZAEc9bufJ1PN0TZiL5W6m+lZDQly4PAA=",
+     "width": 1857,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoLABAAA4BaJYwBTAFvm2KwRTqAAP73ENcPbUnmEDP8Bbjfr3FeWQk+4OS/7CbSUknvRDHpvvaLtts357/1LlU6Bd4c2Uv5DubJyTzoZCXX2MKXLg8AAA==",
      "alt": "O & H — photograph 20"
     },
     {
@@ -1205,9 +1229,9 @@
     {
      "file": "26.jpg",
      "src": "/photos/o-h/26.jpg",
-     "width": 1024,
-     "height": 683,
-     "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAsAA4BaJbAC7AEQUM5D5T+7pgAA/sYHoFYJOI5LC9B3/6LpKF5RKLq8mIwVobRYAhw2pMplc5j07EDGesDG2YBw79O6ipsfz9FyPRRXTj+qWhAC4o9VsAA=",
+     "width": 2600,
+     "height": 1733,
+     "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJbAC7AEQMpFAxRtoAP7GB6BWCTiOSwvQd/+i690fdP5uo/AkiDtooO9xJovKFUTAcK1vLHtrBven1nCBoVphq4/dTtMhtaBh/Nz/sR+D4sIAAAA=",
      "alt": "O & H — photograph 26"
     },
     {
@@ -1217,6 +1241,14 @@
      "height": 1434,
      "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoLABAAA4BaJZACdAEO9dsBnBRwAP7wdUVwX5kKAeWoZ9iqqBkpbrnovjgpTpnU4bjAOdz6DwbCZ+9bR+3LlXPdi7W9W6k3+G5/pBIR8vIcOj8AAAA=",
      "alt": "O & H — photograph 27"
+    },
+    {
+     "file": "28.jpg",
+     "src": "/photos/o-h/28.jpg",
+     "width": 1857,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAQCdASoLABAAA4BaJQBOgBs0TMuM2AD+t6MJ+AsJ85dTzNWL2b73crCOoOZgwS4V1Z1oW2GdpON9igAkaYl2ckskhEoLszS+hfSmYvJ/jETQFr9TRSFEkWL86Ux/canJ8NAAAAA=",
+     "alt": "O & H — photograph 28"
     }
    ]
   },
@@ -1229,19 +1261,19 @@
    "description": "Overcast lakeshore rocks and a purple sari, a graffiti tunnel, then golden backlight on a bride in yellow silk.",
    "order": 5,
    "cover": {
-    "file": "09.jpg",
-    "src": "/photos/s-d/09.jpg",
-    "width": 1024,
-    "height": 573,
-    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAkAA4BaJZwAAxbQa/asIgAA9rnZBeegVT9A8V9Hoh9LaPSzUWCDTfGPfuCN0vK+mA+hm/2e8Q34SoYTsgtE+TK8PskcJVY8RAAA",
-    "alt": "S & D — photograph 9"
+    "file": "25.jpg",
+    "src": "/photos/s-d/25.jpg",
+    "width": 2048,
+    "height": 1180,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAkAA4BaJZwAAxfDnL70AADOOWoTCMkPG18lTgmixpHY+4uMLZ7+2kxoSC731Bkc0sbiE/o+YKIPgZfSt+rKcTKOSvRX23QZ5Pz9AAA=",
+    "alt": "S & D — photograph 25"
    },
    "hero": {
     "file": "19.jpg",
     "src": "/photos/s-d/19.jpg",
-    "width": 1024,
-    "height": 1433,
-    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoLABAAA4BaJYgC7AELXYnSbcarAAD+9+mbWUtLxLqXGM2jOgz64FCjxHPMHH4n2sMtPh0BMthfdeH/gikc5BJhhyhkug+6jt3bhrP6LAAAAA==",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoLABAAA4BaJYgC7AEKiEUK9QTwAP736ZtZS3ljTh9Ws/cJDetJ3VsaNZy0NJ7Qj0m5dWkqlUMowvRHdAP6E8Y5+82LPgj+rkmiFhxTBn9FgAAA",
     "alt": "S & D — photograph 19"
    },
    "featured": [
@@ -1296,9 +1328,9 @@
     {
      "file": "19.jpg",
      "src": "/photos/s-d/19.jpg",
-     "width": 1024,
-     "height": 1433,
-     "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoLABAAA4BaJYgC7AELXYnSbcarAAD+9+mbWUtLxLqXGM2jOgz64FCjxHPMHH4n2sMtPh0BMthfdeH/gikc5BJhhyhkug+6jt3bhrP6LAAAAA==",
+     "width": 1857,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoLABAAA4BaJYgC7AEKiEUK9QTwAP736ZtZS3ljTh9Ws/cJDetJ3VsaNZy0NJ7Qj0m5dWkqlUMowvRHdAP6E8Y5+82LPgj+rkmiFhxTBn9FgAAA",
      "alt": "S & D — photograph 19"
     },
     {
@@ -1458,9 +1490,9 @@
     {
      "file": "19.jpg",
      "src": "/photos/s-d/19.jpg",
-     "width": 1024,
-     "height": 1433,
-     "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoLABAAA4BaJYgC7AELXYnSbcarAAD+9+mbWUtLxLqXGM2jOgz64FCjxHPMHH4n2sMtPh0BMthfdeH/gikc5BJhhyhkug+6jt3bhrP6LAAAAA==",
+     "width": 1857,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoLABAAA4BaJYgC7AEKiEUK9QTwAP736ZtZS3ljTh9Ws/cJDetJ3VsaNZy0NJ7Qj0m5dWkqlUMowvRHdAP6E8Y5+82LPgj+rkmiFhxTBn9FgAAA",
      "alt": "S & D — photograph 19"
     },
     {
@@ -1502,6 +1534,14 @@
      "height": 1434,
      "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoLABAAA4BaJbACdH8AGM35+xczXkAA/uGXqNmZQj+nEaZlMrLz+vgK8jTEbStfzr8qK0ufUhONW4kjiQSAUJn7Ym1JWHJJ7uvtQt7K8p4F/jhy+zV8n/h/4l+fGVMqsAA=",
      "alt": "S & D — photograph 24"
+    },
+    {
+     "file": "25.jpg",
+     "src": "/photos/s-d/25.jpg",
+     "width": 2048,
+     "height": 1180,
+     "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAkAA4BaJZwAAxfDnL70AADOOWoTCMkPG18lTgmixpHY+4uMLZ7+2kxoSC731Bkc0sbiE/o+YKIPgZfSt+rKcTKOSvRX23QZ5Pz9AAA=",
+     "alt": "S & D — photograph 25"
     }
    ]
   },
@@ -1516,17 +1556,17 @@
    "cover": {
     "file": "09.jpg",
     "src": "/photos/n-h/09.jpg",
-    "width": 1024,
-    "height": 676,
-    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAsAA4BaJQBWAMXS7XpIFI6lQADif+C1Sxq5TPORbfMVgs5fb1iRcYAdiA0h3/AFkym62Lz6aeSoFToziBnxEV1En5CBZvpWcslsd9IgQVFmjVK9zFuEarGocmlcXhBnGgAA",
+    "width": 2600,
+    "height": 1717,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQAgCdASoQAAsAA4BaJQBWAMW+1Xrz7junkAAA4n/gtUmvm3AlZTrPz0gAtaZIgYfeo/9vmo7/IBnH5GhgaVQsuk2f86T95/L8PHI8vB4QjLoCSQPoCP4un9gm9Fc3CyugQQ21p1yAAA==",
     "alt": "N & H — photograph 9"
    },
    "hero": {
     "file": "10.jpg",
     "src": "/photos/n-h/10.jpg",
-    "width": 1024,
-    "height": 1433,
-    "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAQCdASoLABAAA4BaJbACdADRGSFDYAD5Dg8tss0/wde5jPhJ+s/RdOqcL+VzgiytY8Pxjpc6SBi9BbW/wfl1d7+hIUzWzNEwxONAuHcB13tOmskFqVHV5WrNnlsk6RGsonkQpLc99gL48AA=",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoLABAAA4BaJbACdAYu5zNg+XorUAD5EQKWwTiUnRAFC6I6QH8dIRHp5W99SWlvWk2fxkJvjZvVxXnt9KZQk8q4H1qYmazzBam7SluHtIjo+4v1KERrKJ5EKS3PfYC+PAA=",
     "alt": "N & H — photograph 10"
    },
    "featured": [
@@ -1565,17 +1605,17 @@
     {
      "file": "09.jpg",
      "src": "/photos/n-h/09.jpg",
-     "width": 1024,
-     "height": 676,
-     "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAsAA4BaJQBWAMXS7XpIFI6lQADif+C1Sxq5TPORbfMVgs5fb1iRcYAdiA0h3/AFkym62Lz6aeSoFToziBnxEV1En5CBZvpWcslsd9IgQVFmjVK9zFuEarGocmlcXhBnGgAA",
+     "width": 2600,
+     "height": 1717,
+     "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQAgCdASoQAAsAA4BaJQBWAMW+1Xrz7junkAAA4n/gtUmvm3AlZTrPz0gAtaZIgYfeo/9vmo7/IBnH5GhgaVQsuk2f86T95/L8PHI8vB4QjLoCSQPoCP4un9gm9Fc3CyugQQ21p1yAAA==",
      "alt": "N & H — photograph 9"
     },
     {
      "file": "10.jpg",
      "src": "/photos/n-h/10.jpg",
-     "width": 1024,
-     "height": 1433,
-     "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAQCdASoLABAAA4BaJbACdADRGSFDYAD5Dg8tss0/wde5jPhJ+s/RdOqcL+VzgiytY8Pxjpc6SBi9BbW/wfl1d7+hIUzWzNEwxONAuHcB13tOmskFqVHV5WrNnlsk6RGsonkQpLc99gL48AA=",
+     "width": 1857,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoLABAAA4BaJbACdAYu5zNg+XorUAD5EQKWwTiUnRAFC6I6QH8dIRHp5W99SWlvWk2fxkJvjZvVxXnt9KZQk8q4H1qYmazzBam7SluHtIjo+4v1KERrKJ5EKS3PfYC+PAA=",
      "alt": "N & H — photograph 10"
     },
     {
@@ -1663,17 +1703,17 @@
     {
      "file": "09.jpg",
      "src": "/photos/n-h/09.jpg",
-     "width": 1024,
-     "height": 676,
-     "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAsAA4BaJQBWAMXS7XpIFI6lQADif+C1Sxq5TPORbfMVgs5fb1iRcYAdiA0h3/AFkym62Lz6aeSoFToziBnxEV1En5CBZvpWcslsd9IgQVFmjVK9zFuEarGocmlcXhBnGgAA",
+     "width": 2600,
+     "height": 1717,
+     "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQAgCdASoQAAsAA4BaJQBWAMW+1Xrz7junkAAA4n/gtUmvm3AlZTrPz0gAtaZIgYfeo/9vmo7/IBnH5GhgaVQsuk2f86T95/L8PHI8vB4QjLoCSQPoCP4un9gm9Fc3CyugQQ21p1yAAA==",
      "alt": "N & H — photograph 9"
     },
     {
      "file": "10.jpg",
      "src": "/photos/n-h/10.jpg",
-     "width": 1024,
-     "height": 1433,
-     "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAQCdASoLABAAA4BaJbACdADRGSFDYAD5Dg8tss0/wde5jPhJ+s/RdOqcL+VzgiytY8Pxjpc6SBi9BbW/wfl1d7+hIUzWzNEwxONAuHcB13tOmskFqVHV5WrNnlsk6RGsonkQpLc99gL48AA=",
+     "width": 1857,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoLABAAA4BaJbACdAYu5zNg+XorUAD5EQKWwTiUnRAFC6I6QH8dIRHp5W99SWlvWk2fxkJvjZvVxXnt9KZQk8q4H1qYmazzBam7SluHtIjo+4v1KERrKJ5EKS3PfYC+PAA=",
      "alt": "N & H — photograph 10"
     },
     {
@@ -1783,12 +1823,12 @@
     "alt": "S. — photograph 19"
    },
    "hero": {
-    "file": "04.jpg",
-    "src": "/photos/s/04.jpg",
-    "width": 1024,
-    "height": 1280,
-    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoNABAAA4BaJaAC7AYt9v77opKVCugA/vZiUdf2rsE0Noy3Ei8nG6x6NDM+y39bmDOxeDBjEDdqLJ3i3+YdDAE9iPu5HbJMyElfBQiFYvetxFu5aRSSNT2bjNGKRFZyAAA=",
-    "alt": "S. — photograph 4"
+    "file": "20.jpg",
+    "src": "/photos/s/20.jpg",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoLABAAA4BaJbAC7H8AF8hlC82Z/UQA/vi5YcpAc6TzLq185CngzVP3O3L3wipWo2QWEKTW8yCg+0zo9MIxHnXYB/euqEUq6TIBcw5l0yOv0EWg6ZYkPrGy4PQpory4nTP7iUURUAAAAA==",
+    "alt": "S. — photograph 20"
    },
    "featured": [
     {
@@ -2008,6 +2048,14 @@
      "height": 683,
      "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsAA4BaJQAAWNM4z1SHsAQA/vcQ1ax6UvUK4wCCV873z04OJ5teRQRIJdsRIsLWu4pTEYZEtIBBqgSAKZxaEwjnIYlHUoL6Dq73VsrY6wAA",
      "alt": "S. — photograph 19"
+    },
+    {
+     "file": "20.jpg",
+     "src": "/photos/s/20.jpg",
+     "width": 1857,
+     "height": 2600,
+     "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoLABAAA4BaJbAC7H8AF8hlC82Z/UQA/vi5YcpAc6TzLq185CngzVP3O3L3wipWo2QWEKTW8yCg+0zo9MIxHnXYB/euqEUq6TIBcw5l0yOv0EWg6ZYkPrGy4PQpory4nTP7iUURUAAAAA==",
+     "alt": "S. — photograph 20"
     }
    ]
   },
@@ -4297,21 +4345,11 @@
  "highlights": {
   "hero": [
    {
-    "file": "15.jpg",
-    "src": "/photos/m-r/15.jpg",
-    "width": 1024,
-    "height": 1280,
-    "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwAgCdASoNABAAA4BaJagC7AYvNyTKpzl2IIDAAP7rsRLUPoyryUXbCz2dx18iGKhg9zBGvt2qgdpVIZkIHLh6cUnhR5yv1Fm32IyX7H6ZJcovjZ3DSDzZ3Ie81KVRt9FCLTwJuF8PK5fwcD9PjxpPFxr3J2AA",
-    "alt": "M & R — photograph 15",
-    "album": "m-r",
-    "albumTitle": "M & R"
-   },
-   {
     "file": "22.jpg",
     "src": "/photos/t-z/22.jpg",
-    "width": 1024,
-    "height": 1280,
-    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbX3tY3wAA/uFNrjMv8miMVrHON+cVquFrgttrt9634S2V54sVULSIn151W+HNR0X9rjF5+/NNkRIFuQYewoDqa8nwTWBfeh2vC3biXqVaKQ5Sub0AAA==",
+    "width": 2080,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbQGxuXQAA/uF0YSP2wvkBAIwqta96wTpVXoSwmEZfRCT7HF/a6dOU3XCDA358NqK9meL5WyMQVkvtvJjslAdTY5Do/bY7soGtPzTNel7p7+8LLRYAAA==",
     "alt": "T & Z — photograph 22",
     "album": "t-z",
     "albumTitle": "T & Z"
@@ -4319,9 +4357,9 @@
    {
     "file": "20.jpg",
     "src": "/photos/o-h/20.jpg",
-    "width": 1024,
-    "height": 1434,
-    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoLABAAA4BaJYwBTAFvr22bhc2y8sIAAP73ENcMc5xdLZ77qJNNcmEQ+D3sTx2yFeWQpLj65IB4xakDesJZAEc9bufJ1PN0TZiL5W6m+lZDQly4PAA=",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoLABAAA4BaJYwBTAFvm2KwRTqAAP73ENcPbUnmEDP8Bbjfr3FeWQk+4OS/7CbSUknvRDHpvvaLtts357/1LlU6Bd4c2Uv5DubJyTzoZCXX2MKXLg8AAA==",
     "alt": "O & H — photograph 20",
     "album": "o-h",
     "albumTitle": "O & H"
@@ -4329,9 +4367,9 @@
    {
     "file": "10.jpg",
     "src": "/photos/n-h/10.jpg",
-    "width": 1024,
-    "height": 1433,
-    "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAQCdASoLABAAA4BaJbACdADRGSFDYAD5Dg8tss0/wde5jPhJ+s/RdOqcL+VzgiytY8Pxjpc6SBi9BbW/wfl1d7+hIUzWzNEwxONAuHcB13tOmskFqVHV5WrNnlsk6RGsonkQpLc99gL48AA=",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoLABAAA4BaJbACdAYu5zNg+XorUAD5EQKWwTiUnRAFC6I6QH8dIRHp5W99SWlvWk2fxkJvjZvVxXnt9KZQk8q4H1qYmazzBam7SluHtIjo+4v1KERrKJ5EKS3PfYC+PAA=",
     "alt": "N & H — photograph 10",
     "album": "n-h",
     "albumTitle": "N & H"
@@ -4339,82 +4377,92 @@
    {
     "file": "19.jpg",
     "src": "/photos/s-d/19.jpg",
-    "width": 1024,
-    "height": 1433,
-    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoLABAAA4BaJYgC7AELXYnSbcarAAD+9+mbWUtLxLqXGM2jOgz64FCjxHPMHH4n2sMtPh0BMthfdeH/gikc5BJhhyhkug+6jt3bhrP6LAAAAA==",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoLABAAA4BaJYgC7AEKiEUK9QTwAP736ZtZS3ljTh9Ws/cJDetJ3VsaNZy0NJ7Qj0m5dWkqlUMowvRHdAP6E8Y5+82LPgj+rkmiFhxTBn9FgAAA",
     "alt": "S & D — photograph 19",
     "album": "s-d",
     "albumTitle": "S & D"
    },
    {
-    "file": "04.jpg",
-    "src": "/photos/s/04.jpg",
-    "width": 1024,
-    "height": 1280,
-    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoNABAAA4BaJaAC7AYt9v77opKVCugA/vZiUdf2rsE0Noy3Ei8nG6x6NDM+y39bmDOxeDBjEDdqLJ3i3+YdDAE9iPu5HbJMyElfBQiFYvetxFu5aRSSNT2bjNGKRFZyAAA=",
-    "alt": "S. — photograph 4",
+    "file": "20.jpg",
+    "src": "/photos/s/20.jpg",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoLABAAA4BaJbAC7H8AF8hlC82Z/UQA/vi5YcpAc6TzLq185CngzVP3O3L3wipWo2QWEKTW8yCg+0zo9MIxHnXYB/euqEUq6TIBcw5l0yOv0EWg6ZYkPrGy4PQpory4nTP7iUURUAAAAA==",
+    "alt": "S. — photograph 20",
     "album": "s",
     "albumTitle": "S."
+   },
+   {
+    "file": "28.jpg",
+    "src": "/photos/o-h/28.jpg",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAQCdASoLABAAA4BaJQBOgBs0TMuM2AD+t6MJ+AsJ85dTzNWL2b73crCOoOZgwS4V1Z1oW2GdpON9igAkaYl2ckskhEoLszS+hfSmYvJ/jETQFr9TRSFEkWL86Ux/canJ8NAAAAA=",
+    "alt": "O & H — photograph 28",
+    "album": "o-h",
+    "albumTitle": "O & H"
    }
   ],
   "selected": [
    {
     "file": "15.jpg",
     "src": "/photos/o-h/15.jpg",
-    "width": 1024,
-    "height": 819,
-    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQAgCdASoQAA0AA4BaJbACdAYwxUKHurwfkYAA/OUQGonQxfeEp+btgsgerMttwvDOvo4hd4YlXIjyQ2iyYQPpWOWsz1mZf8z57/5bG7KJq0mx15hvHvUtGR3DOxvXJ6R7/9io4eRKtf3Enzi8N15F82oydpJ+hQp4AA==",
+    "width": 2600,
+    "height": 2080,
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQAgCdASoQAA0AA4BaJbACdADL+nDIvZUgAPzlEBxLbDrQrgTMoWsWQPRe0xuBG0zs2wzcixcMA1s90ZS10tKJrU1unKtg7lh47jdnB+Xe1jm9XmGu85FksLV0j6c8EOGf9io4eRKtf3Enzi8N15F82oydpJ+hQp4AAA==",
     "alt": "O & H — photograph 15",
     "album": "o-h",
     "albumTitle": "O & H"
    },
    {
-    "file": "02.jpg",
-    "src": "/photos/n-h/02.jpg",
-    "width": 1024,
-    "height": 1434,
-    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoLABAAA4BaJbACdADbYwrmwt2AAP5IAOw8FHEN7qmcAaTBYENaByIEcmZr5auqUVYLKAWYYJpwbHTdzWK0vguV1ilOYd5xZQ4yhA4CAYqTJAKath/E6QC0ZVzWiUQAAAA=",
-    "alt": "N & H — photograph 2",
+    "file": "10.jpg",
+    "src": "/photos/n-h/10.jpg",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoLABAAA4BaJbACdAYu5zNg+XorUAD5EQKWwTiUnRAFC6I6QH8dIRHp5W99SWlvWk2fxkJvjZvVxXnt9KZQk8q4H1qYmazzBam7SluHtIjo+4v1KERrKJ5EKS3PfYC+PAA=",
+    "alt": "N & H — photograph 10",
     "album": "n-h",
     "albumTitle": "N & H"
    },
    {
-    "file": "06.jpg",
-    "src": "/photos/t-z/06.jpg",
-    "width": 1024,
-    "height": 1280,
-    "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwAgCdASoNABAAA4BaJbACdAYs3dDKMzLMIc6AAPlSF0D0sQn8l9bM9vZip3tZDLZdJqc0yPxTJY6yE42mkaS3A4xfh59wJXudyxWRDCs3ykpgJTUnz9FqGCV4F7/LYax06aBiMUTd5d6qxdaMFPGa7kwAAA==",
-    "alt": "T & Z — photograph 6",
+    "file": "22.jpg",
+    "src": "/photos/t-z/22.jpg",
+    "width": 2080,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoNABAAA4BaJbACdADbQGxuXQAA/uF0YSP2wvkBAIwqta96wTpVXoSwmEZfRCT7HF/a6dOU3XCDA358NqK9meL5WyMQVkvtvJjslAdTY5Do/bY7soGtPzTNel7p7+8LLRYAAA==",
+    "alt": "T & Z — photograph 22",
     "album": "t-z",
     "albumTitle": "T & Z"
    },
    {
-    "file": "05.jpg",
-    "src": "/photos/s-d/05.jpg",
-    "width": 1024,
-    "height": 651,
-    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoQAAoAA4BaJQBOgCHWy22AAP72ESZyV2ArVnF3Nw3tO0ysCdJAneW7gSKsNL4NZN9lE+CpjTcKjN0RHJEW5QOHpvSrX9+T9mW49KHhQAA=",
-    "alt": "S & D — photograph 5",
-    "album": "s-d",
-    "albumTitle": "S & D"
+    "file": "26.jpg",
+    "src": "/photos/o-h/26.jpg",
+    "width": 2600,
+    "height": 1733,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJbAC7AEQMpFAxRtoAP7GB6BWCTiOSwvQd/+i690fdP5uo/AkiDtooO9xJovKFUTAcK1vLHtrBven1nCBoVphq4/dTtMhtaBh/Nz/sR+D4sIAAAA=",
+    "alt": "O & H — photograph 26",
+    "album": "o-h",
+    "albumTitle": "O & H"
    },
    {
-    "file": "02.jpg",
-    "src": "/photos/m-r/02.jpg",
-    "width": 1024,
-    "height": 750,
-    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQAAwAA4BaJbACdAYtBUFdW6e1p8AA/uste7FFz2l/meIcyKF88h4DUR1ulhm/2VV/jgX/nhXd4GfAStIMP7FchZuW+l8ySozlnIimS4/4iu85NO7S0u6N4y3CfGUjbzSqSEAA",
-    "alt": "M & R — photograph 2",
+    "file": "15.jpg",
+    "src": "/photos/m-r/15.jpg",
+    "width": 2080,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwAgCdASoNABAAA4BaJaAC7AYvhDq61v/FAAD+67zS6sEhxPNRjvGN0oN0q0XiSKny+5gjXtdaGN6aOy1X3x5uCnDe2KCKzzkCGhNSidNvLamak6cwdaOwyql8gZagFFq0puuW/uopXA5dkbaPPctT31FLGEgA",
+    "alt": "M & R — photograph 15",
     "album": "m-r",
     "albumTitle": "M & R"
    },
    {
-    "file": "05.jpg",
-    "src": "/photos/s/05.jpg",
-    "width": 1024,
-    "height": 1536,
-    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoLABAAA4BaJbAC7AELY1XXfAwboAAA/vizGv+aOMT/Iv3QH8k3N5HSaIqrDDIUPgbgZ0Hhbl+UZVZ7diaSZDbsvJ6B1esGEPG5sniTfJLTbjK/v66dL4ce9WDsaZwsEwv+AAAA",
-    "alt": "S. — photograph 5",
+    "file": "20.jpg",
+    "src": "/photos/s/20.jpg",
+    "width": 1857,
+    "height": 2600,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoLABAAA4BaJbAC7H8AF8hlC82Z/UQA/vi5YcpAc6TzLq185CngzVP3O3L3wipWo2QWEKTW8yCg+0zo9MIxHnXYB/euqEUq6TIBcw5l0yOv0EWg6ZYkPrGy4PQpory4nTP7iUURUAAAAA==",
+    "alt": "S. — photograph 20",
     "album": "s",
     "albumTitle": "S."
    }

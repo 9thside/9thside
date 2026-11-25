@@ -1,19 +1,19 @@
 {
   "_help": "Pick what the homepage leads with, each photo written as \"album-folder/filename\". 'heroWide' is the full-screen slideshow on computers (wide photos); 'hero' is the same slideshow on phones (tall photos). 'albums' is the three album folders shown under Selected commissions. 'selected' supplies supporting photos on the Weddings and About pages.",
   "heroWide": [
+    "m-r/30.jpg",
     "o-h/15.jpg",
-    "m-r/08.jpg",
     "n-h/09.jpg",
     "t-z/13.jpg",
-    "s-d/09.jpg"
+    "o-h/26.jpg"
   ],
   "hero": [
-    "m-r/15.jpg",
     "t-z/22.jpg",
     "o-h/20.jpg",
     "n-h/10.jpg",
     "s-d/19.jpg",
-    "s/04.jpg"
+    "s/20.jpg",
+    "o-h/28.jpg"
   ],
   "albums": [
     "m-r",
@@ -22,10 +22,10 @@
   ],
   "selected": [
     "o-h/15.jpg",
-    "n-h/02.jpg",
-    "t-z/06.jpg",
-    "s-d/05.jpg",
-    "m-r/02.jpg",
-    "s/05.jpg"
+    "n-h/10.jpg",
+    "t-z/22.jpg",
+    "o-h/26.jpg",
+    "m-r/15.jpg",
+    "s/20.jpg"
   ]
 }
