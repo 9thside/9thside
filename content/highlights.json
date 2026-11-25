@@ -1,37 +1,31 @@
 {
   "_help": "Pick what the homepage leads with, each photo written as \"album-folder/filename\". 'heroWide' is the full-screen slideshow on computers (wide photos); 'hero' is the same slideshow on phones (tall photos). 'albums' is the three album folders shown under Selected commissions. 'selected' supplies supporting photos on the Weddings and About pages.",
   "heroWide": [
-    "mohsin-rida/41.jpg",
-    "osama-hajra-nikkah/13.jpg",
-    "tharif-zahraa/22.jpg",
-    "haseenah-farahaz-portraits/29.jpg",
-    "osama-hajra-waleema/36.jpg"
+    "o-h/15.jpg",
+    "m-r/08.jpg",
+    "n-h/09.jpg",
+    "t-z/13.jpg",
+    "s-d/09.jpg"
   ],
   "hero": [
-    "tharif-zahraa/18.jpg",
-    "mohsin-rida/22.jpg",
-    "nurah-hamaz/16.jpg",
-    "hasnain-zeba/35.jpg",
-    "osama-hajra-nikkah/06.jpg",
-    "yunus-safiyyah/26.jpg"
+    "m-r/15.jpg",
+    "t-z/22.jpg",
+    "o-h/20.jpg",
+    "n-h/10.jpg",
+    "s-d/19.jpg",
+    "s/04.jpg"
   ],
   "albums": [
-    "tharif-zahraa",
-    "mohsin-rida",
-    "osama-hajra-nikkah"
+    "m-r",
+    "t-z",
+    "o-h"
   ],
   "selected": [
-    "osama-hajra-nikkah/13.jpg",
-    "sidrah/11.jpg",
-    "mohsin-rida/41.jpg",
-    "hasnain-zeba/35.jpg",
-    "subhani-dhivian-pre-shoot/15.jpg",
-    "manmit-vikita/16.jpg",
-    "the-azeezs/29.jpg",
-    "yunus-safiyyah/26.jpg",
-    "mohid-abrar/10.jpg",
-    "subhani-dhivian/48.jpg",
-    "jalen-wardah/37.jpg",
-    "hana-amman/07.jpg"
+    "o-h/15.jpg",
+    "n-h/02.jpg",
+    "t-z/06.jpg",
+    "s-d/05.jpg",
+    "m-r/02.jpg",
+    "s/05.jpg"
   ]
 }

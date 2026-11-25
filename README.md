@@ -20,12 +20,15 @@ category. There is nothing else to register.
 2. Unzip it, then run:
 
    ```bash
-   npm run album -- "~/Downloads/Sara & Omar" --title "Sara & Omar" --category wedding --location "Toronto" --date 2025-08-16
+   npm run album -- "~/Downloads/Sara & Omar" --title "S & O" --category wedding
    ```
 
-   This resizes every photo to 2400px, writes them to `public/photos/sara-omar/`
+   This resizes every photo to 2400px, writes them to `public/photos/s-o/`
    and creates an `album.json` there.
 3. Commit and push. Vercel rebuilds and the album is live.
+
+Albums are titled with initials only ("S & O") and carry no dates, for client
+privacy; the title also sets the web address, so keep names out of it.
 
 Categories: `wedding`, `couples`, `portrait`, `event`, `commercial`, `real-estate`.
 
@@ -33,10 +36,8 @@ Categories: `wedding`, `couples`, `portrait`, `event`, `commercial`, `real-estat
 
 ```json
 {
-  "title": "Sara & Omar",
+  "title": "S & O",
   "category": "wedding",
-  "location": "Toronto, Ontario",
-  "date": "2025-08-16",
   "description": "A sentence or two shown at the top of the album.",
   "cover": "014.jpg",
   "hero": "032.jpg",
@@ -50,7 +51,7 @@ Categories: `wedding`, `couples`, `portrait`, `event`, `commercial`, `real-estat
 - `hero` — portrait photo used where a tall crop is needed.
 - `featured` — the album's best frames (used on the homepage feature).
 - `hide` — files kept in the folder but left out of the gallery grid.
-- `order` — lower numbers appear first; otherwise albums sort newest first.
+- `order` — lower numbers appear first in the portfolio (ties sort by title).
 
 All fields are optional; sensible defaults are used when they are missing.
 

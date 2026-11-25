@@ -80,7 +80,6 @@ async function buildAlbum(slug) {
     category,
     categoryLabel: CATEGORIES[category],
     location: meta.location ?? '',
-    date: meta.date ?? '',
     description: meta.description ?? '',
     order: meta.order ?? 0,
     cover,
@@ -101,7 +100,7 @@ async function main() {
 
   const albums = (await Promise.all(slugs.map(buildAlbum)))
     .filter(Boolean)
-    .sort((a, b) => a.order - b.order || b.date.localeCompare(a.date) || a.title.localeCompare(b.title))
+    .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title))
 
   const index = new Map()
   for (const a of albums) for (const p of [...a.photos, a.cover, a.hero]) index.set(`${a.slug}/${p.file}`, { ...p, album: a.slug, albumTitle: a.title })

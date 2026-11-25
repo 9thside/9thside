@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: '/work', destination: '/portfolio', permanent: true },
-      { source: '/work/tharif-zahraa', destination: '/portfolio/tharif-zahraa', permanent: true },
       { source: '/work/:path*', destination: '/portfolio', permanent: true },
       { source: '/services/:path+', destination: '/services', permanent: true },
     ]

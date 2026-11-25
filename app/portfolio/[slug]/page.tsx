@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { albums, getAlbum, albumYear } from '@/lib/albums'
+import { albums, getAlbum } from '@/lib/albums'
 import { Gallery } from '@/components/gallery/Gallery'
 import { Photo } from '@/components/shared/Photo'
 import { Reveal } from '@/components/shared/Reveal'
@@ -36,7 +36,6 @@ export default async function AlbumPage({ params }: Props) {
   const facts = [
     ['Category', album.categoryLabel],
     ['Location', album.location],
-    ['Year', albumYear(album)],
     ['Photographs', String(album.photos.length)],
   ].filter(([, value]) => value)
 

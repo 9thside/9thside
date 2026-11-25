@@ -11,8 +11,6 @@ export const metadata: Metadata = {
 }
 
 export default function PortfolioPage() {
-  // Weddings lead; everything else follows in its existing (newest-first) order.
-  const ordered = [...albums.filter((a) => a.category === 'wedding'), ...albums.filter((a) => a.category !== 'wedding')]
   return (
     <>
       <PageHeader
@@ -25,7 +23,7 @@ export default function PortfolioPage() {
         intro="Complete albums rather than a highlight reel — because a day is more than its ten best frames."
       />
       <section className="shell pb-28 md:pb-44">
-        <AlbumBrowser albums={ordered} categories={albumCategories()} />
+        <AlbumBrowser albums={albums} categories={albumCategories()} />
       </section>
       <InquiryBand />
     </>

@@ -1,0 +1,18 @@
+{
+  "title": "A & E",
+  "category": "wedding",
+  "description": "A bright family home and garden full of orange, pink and marigold yellow, henna-covered hands and easy laughter.",
+  "cover": "12.jpg",
+  "hero": "22.jpg",
+  "featured": [
+    "12.jpg",
+    "22.jpg",
+    "11.jpg",
+    "06.jpg",
+    "21.jpg",
+    "02.jpg",
+    "19.jpg",
+    "24.jpg"
+  ],
+  "order": 14
+}
