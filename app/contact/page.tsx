@@ -6,7 +6,7 @@ import { PageHeader } from '@/components/shared/PageHeader'
 import { Reveal } from '@/components/shared/Reveal'
 
 export const metadata: Metadata = {
-  title: 'Inquire',
+  title: 'Enquire',
   description: 'Check availability and inquire about wedding, portrait and event photography with 9thside in Toronto.',
   alternates: { canonical: '/contact' },
 }
@@ -15,10 +15,10 @@ export default function ContactPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Inquire"
+        eyebrow="Enquire"
         title={
           <>
-            Let’s <em>talk.</em>
+            Begin your <em>enquiry.</em>
           </>
         }
         intro="The more you share, the better I can help — your date, your venue, and the kind of photographs you are hoping for."

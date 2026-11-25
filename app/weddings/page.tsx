@@ -59,11 +59,11 @@ export default function WeddingsPage() {
     <>
       <section className="relative min-h-[100svh] overflow-hidden bg-night text-cream">
         {lead && <Photo photo={lead} fill priority quality={85} sizes="100vw" className="kenburns object-[50%_35%]" />}
-        <div className="absolute inset-0 bg-gradient-to-t from-night via-night/30 to-night/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-black/35" />
         <div className="shell relative flex min-h-[100svh] flex-col justify-end pb-16 pt-40 md:pb-24">
           <p className="eyebrow text-cream/70">Weddings</p>
-          <h1 className="display mt-6 max-w-6xl text-[clamp(4rem,13vw,13rem)]">
-            Your day, <em>unscripted.</em>
+          <h1 className="display mt-6 max-w-6xl text-[clamp(2.75rem,7vw,6.5rem)]">
+            Your wedding, <em>beautifully kept.</em>
           </h1>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/contact?type=Wedding" className="btn-light">
@@ -107,7 +107,7 @@ export default function WeddingsPage() {
         <div className="shell py-28 md:py-40">
           <Reveal>
             <p className="eyebrow text-accent">What is included</p>
-            <h2 className="display mt-6 max-w-3xl text-[clamp(3rem,8vw,8rem)]">
+            <h2 className="display mt-6 max-w-3xl text-[clamp(2.25rem,4.8vw,4.5rem)]">
               Everything you need, <em>nothing you do not.</em>
             </h2>
           </Reveal>
@@ -143,7 +143,7 @@ export default function WeddingsPage() {
       <section className="shell grid gap-12 pb-28 md:pb-44 lg:grid-cols-[1fr_2fr]">
         <Reveal>
           <p className="eyebrow text-accent">Good to know</p>
-          <h2 className="display mt-6 text-[clamp(3rem,7vw,7rem)]">
+          <h2 className="display mt-6 text-[clamp(2.25rem,4.8vw,4.5rem)]">
             Questions, <em>answered.</em>
           </h2>
         </Reveal>

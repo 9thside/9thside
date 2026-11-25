@@ -28,7 +28,7 @@ export default function AboutPage() {
         eyebrow="About"
         title={
           <>
-            The guy behind <em>the camera.</em>
+            Nabeel <em>Rushdi.</em>
           </>
         }
       />
@@ -71,7 +71,7 @@ export default function AboutPage() {
           <div>
             <Reveal>
               <p className="eyebrow text-accent">How I work</p>
-              <h2 className="display mt-6 text-[clamp(3rem,7vw,7rem)]">
+              <h2 className="display mt-6 text-[clamp(2.25rem,4.8vw,4.5rem)]">
                 Three things I <em>will not</em> compromise on.
               </h2>
             </Reveal>

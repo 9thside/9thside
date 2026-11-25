@@ -1,52 +1,45 @@
 'use client'
 
 import { createContext, useContext, useEffect, useState } from 'react'
-import { AnimatePresence, animate, motion, useMotionValue, useTransform } from 'framer-motion'
-import { EASE_EXPO } from '@/lib/motion'
+import Image from 'next/image'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const ReadyContext = createContext(true)
 
-/** True once the opening curtain has lifted — entrance animations wait for it. */
+/** True once the opening veil has lifted — entrance animations wait for it. */
 export const useReady = () => useContext(ReadyContext)
 
 const SEEN_KEY = '9thside-intro'
 
-/** Opening curtain: counts to 100 once per visit, then lifts to reveal the page. */
+/** A brief, quiet opening: the mark on black, then the page fades in. Once per visit. */
 export function Intro({ children }: { children: React.ReactNode }) {
-  const [phase, setPhase] = useState<'loading' | 'done'>('loading')
-  const count = useMotionValue(0)
-  const label = useTransform(count, (v) => String(Math.round(v)).padStart(3, '0'))
+  const [done, setDone] = useState(false)
 
   useEffect(() => {
     const skip =
       window.matchMedia('(prefers-reduced-motion: reduce)').matches || sessionStorage.getItem(SEEN_KEY) === '1'
     if (skip) {
-      setPhase('done')
+      setDone(true)
       return
     }
     sessionStorage.setItem(SEEN_KEY, '1')
-    const controls = animate(count, 100, { duration: 1.5, ease: [0.65, 0, 0.35, 1], onComplete: () => setPhase('done') })
-    return () => controls.stop()
-  }, [count])
+    const id = setTimeout(() => setDone(true), 1100)
+    return () => clearTimeout(id)
+  }, [])
 
   return (
-    <ReadyContext.Provider value={phase === 'done'}>
+    <ReadyContext.Provider value={done}>
       {children}
       <AnimatePresence>
-        {phase === 'loading' && (
+        {!done && (
           <motion.div
-            className="fixed inset-0 z-[200] flex flex-col justify-between bg-accent p-5 text-night sm:p-8 lg:p-12"
-            exit={{ y: '-100%' }}
-            transition={{ duration: 0.9, ease: EASE_EXPO }}
+            className="fixed inset-0 z-[200] flex items-center justify-center bg-paper"
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.9, ease: 'easeInOut' }}
           >
-            <div className="flex items-start justify-between">
-              <span className="eyebrow">9thside</span>
-              <span className="eyebrow">Photography — Toronto</span>
-            </div>
-            <div className="flex items-end justify-between">
-              <span className="eyebrow pb-3">Loading the good stuff</span>
-              <motion.span className="display text-[clamp(7rem,28vw,24rem)] tabular-nums">{label}</motion.span>
-            </div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
+              <Image src="/media/logo-black-full-trim.png" alt="9thside" width={900} height={683} priority className="h-16 w-auto" />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
