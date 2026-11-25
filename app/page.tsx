@@ -32,8 +32,9 @@ const steps = [
 ]
 
 export default function HomePage() {
-  const [feature, ...rest] = albums
-  const more = rest.slice(0, 4)
+  // Lead with a wedding; the rest of the newest work follows.
+  const feature = albums.find((a) => a.category === 'wedding') ?? albums[0]
+  const more = albums.filter((a) => a !== feature).slice(0, 4)
   // The hero pile leads with the chosen hero photos, topped up from the favourites.
   const pile = [...highlights.hero, ...highlights.selected].filter(
     (p, i, all) => all.findIndex((q) => q.src === p.src) === i
