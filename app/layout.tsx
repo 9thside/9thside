@@ -1,64 +1,86 @@
-import type { Metadata } from 'next'
-import { Cormorant, Inter } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
+import { Archivo, Instrument_Serif, Inter } from 'next/font/google'
 import './globals.css'
 import { Nav } from '@/components/layout/Nav'
 import { Footer } from '@/components/layout/Footer'
 import { SmoothScroll } from '@/components/shared/SmoothScroll'
-import { CursorFollower } from '@/components/ui/CursorFollower'
-import { ScrollProgress } from '@/components/shared/ScrollProgress'
+import { Intro } from '@/components/shared/Intro'
+import { Cursor } from '@/components/shared/Cursor'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { site } from '@/lib/site'
+import { highlights } from '@/lib/albums'
 
-const cormorant = Cormorant({
+const poster = Archivo({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  style: ['normal', 'italic'],
-  variable: '--font-display',
+  axes: ['wdth'],
+  variable: '--font-poster',
   display: 'swap',
 })
 
-const inter = Inter({
+const serif = Instrument_Serif({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
+const body = Inter({
+  subsets: ['latin'],
   variable: '--font-body',
   display: 'swap',
 })
 
+const title = `${site.name} — Wedding & Portrait Photographer, Toronto`
+const ogImage = highlights.hero[0]
+
 export const metadata: Metadata = {
-  title: {
-    default: '9thside — Digital & Visual Experiences',
-    template: '%s — 9thside',
-  },
-  description:
-    'Premium digital and visual experiences across web design & development, photography, film, and brand. Founded by Nabeel Rushdi.',
+  metadataBase: new URL(site.url),
+  title: { default: title, template: `%s — ${site.name}` },
+  description: site.description,
+  alternates: { canonical: '/' },
   openGraph: {
-    title: '9thside',
-    description: 'Premium digital and visual experiences.',
+    title,
+    description: site.description,
     type: 'website',
-    siteName: '9thside',
+    siteName: site.name,
+    locale: 'en_CA',
+    images: ogImage ? [{ url: ogImage.src, width: ogImage.width, height: ogImage.height }] : undefined,
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: '9thside',
-    description: 'Premium digital and visual experiences.',
-  },
+  twitter: { card: 'summary_large_image', title, description: site.description },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export const viewport: Viewport = { themeColor: '#0b0b0c' }
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': `${site.url}/#studio`,
+  name: site.name,
+  description: site.description,
+  url: site.url,
+  email: site.email,
+  image: ogImage ? `${site.url}${ogImage.src}` : undefined,
+  founder: { '@type': 'Person', name: site.founder },
+  address: { '@type': 'PostalAddress', addressLocality: 'Toronto', addressRegion: 'ON', addressCountry: 'CA' },
+  areaServed: ['Toronto', 'Mississauga', 'Greater Toronto Area', 'Ontario'],
+  knowsAbout: ['Wedding photography', 'Engagement photography', 'Portrait photography', 'Event photography'],
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" className={`${poster.variable} ${serif.variable} ${body.variable}`}>
       <body>
-        <CursorFollower />
-        <ScrollProgress />
-        <SmoothScroll>
-          <Nav />
-          <main>{children}</main>
-          <Footer />
-        </SmoothScroll>
+        <Intro>
+          <SmoothScroll>
+            <Nav />
+            <main>{children}</main>
+            <Footer />
+          </SmoothScroll>
+        </Intro>
+        <Cursor />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Analytics />
         <SpeedInsights />
       </body>

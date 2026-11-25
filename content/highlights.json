@@ -1,0 +1,25 @@
+{
+  "_help": "Pick the photos the homepage leads with. Each entry is \"album-folder/filename\". 'hero' is the pile of prints at the top (the first one sits in the middle; use about six, mixing tall and wide); 'selected' is the scrolling reel of favourite frames further down. Leave a list empty to fall back to each album's own featured photos.",
+  "hero": [
+    "tharif-zahraa/18.jpg",
+    "mohsin-rida/22.jpg",
+    "nurah-hamaz/16.jpg",
+    "osama-hajra-waleema/36.jpg",
+    "shakir-umaima/29.jpg",
+    "haseenah-farahaz-portraits/29.jpg"
+  ],
+  "selected": [
+    "osama-hajra-nikkah/13.jpg",
+    "sidrah/11.jpg",
+    "mohsin-rida/41.jpg",
+    "hasnain-zeba/35.jpg",
+    "subhani-dhivian-pre-shoot/15.jpg",
+    "manmit-vikita/16.jpg",
+    "the-azeezs/29.jpg",
+    "yunus-safiyyah/26.jpg",
+    "mohid-abrar/10.jpg",
+    "subhani-dhivian/48.jpg",
+    "jalen-wardah/37.jpg",
+    "hana-amman/07.jpg"
+  ]
+}

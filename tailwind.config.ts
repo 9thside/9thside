@@ -1,31 +1,26 @@
 import type { Config } from 'tailwindcss'
 
+// Dark, cinematic palette. "paper" is the page background and "ink" the text
+// colour, so swapping these two values re-themes the whole site.
 const config: Config = {
-  content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './lib/**/*.{ts,tsx}',
-  ],
+  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './lib/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        bg: '#080808',
-        'surface-1': '#0e0e0e',
-        'surface-2': '#141414',
-        'surface-3': '#1c1c1c',
-        'text-primary': '#f0ede8',
-        accent: '#c4a97a',
+        paper: '#0b0b0c',
+        'paper-deep': '#151516',
+        ink: '#f2efe9',
+        night: '#0b0b0c',
+        cream: '#f2efe9',
+        accent: '#ff4b1f',
       },
       fontFamily: {
-        display: ['var(--font-display)', 'Georgia', 'serif'],
+        display: ['var(--font-serif)', 'Georgia', 'serif'],
+        poster: ['var(--font-poster)', 'Impact', 'sans-serif'],
         body: ['var(--font-body)', 'system-ui', 'sans-serif'],
-      },
-      letterSpacing: {
-        widest2: '0.18em',
       },
       transitionTimingFunction: {
         expo: 'cubic-bezier(0.16, 1, 0.3, 1)',
-        smooth: 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
     },
   },
